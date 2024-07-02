@@ -32,7 +32,7 @@
         padding-left: 0;
         margin-bottom: 0;
         list-style-type: none;
-    
+
         li {
             display: inline-block;
             margin-right: 25px;
@@ -40,7 +40,7 @@
             position: relative;
             color: #343434;
             font-size: 16px;
-    
+
             i {
                 color: var(--primaryColor);
                 position: absolute;
@@ -52,7 +52,7 @@
             a {
                 display: inline-block;
                 color: #343434;
-    
+
                 &:hover {
                     color: var(--primaryColor);
                 }
@@ -67,7 +67,7 @@
         padding-left: 0;
         margin-bottom: 0;
         list-style-type: none;
-    
+
         li {
             display: inline-block;
             margin-right: 25px;
@@ -75,7 +75,7 @@
             position: relative;
             color: #343434;
             font-size: 16px;
-    
+
             i {
                 color: var(--primaryColor);
                 position: absolute;
@@ -95,7 +95,7 @@
             a {
                 display: inline-block;
                 color: #343434;
-    
+
                 &:hover {
                     color: var(--primaryColor);
                 }
@@ -223,7 +223,7 @@
         }
         .navbar-nav {
             margin-left: 60px;
-    
+
             .nav-item {
                 position: relative;
                 margin: {
@@ -250,7 +250,7 @@
                 }
                 .dropdown-toggle {
                     padding-right: 20px;
-    
+
                     &::after {
                         display: none;
                     }
@@ -294,16 +294,16 @@
                     transition: all 0.2s ease-in-out;
                     transform: translate3d(0, 18px, 0);
                     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    
+
                     .nav-item {
                         margin: 0;
-                        
+
                         .nav-link {
                             display: block;
                             font-size: 15px;
                             padding: 8px 25px;
                             color: var(--blackColor);
-                            
+
                             &.active, &:hover {
                                 color: var(--primaryColor);
                             }
@@ -322,11 +322,11 @@
                             margin-top: 0;
                             visibility: hidden;
                             transform: translate3d(0, 18px, 0);
-                            
+
                             .nav-item {
                                 .nav-link {
                                     color: var(--blackColor);
-    
+
                                     &.active, &:hover {
                                         color: var(--primaryColor);
                                     }
@@ -337,11 +337,11 @@
                                     left: -100%;
                                     visibility: hidden;
                                     transform: translate3d(0, 18px, 0);
-        
+
                                     .nav-item {
                                         .nav-link {
                                             color: var(--blackColor);
-        
+
                                             &.active, &:hover {
                                                 color: var(--primaryColor);
                                             }
@@ -352,11 +352,11 @@
                                             left: 100%;
                                             visibility: hidden;
                                             transform: translate3d(0, 18px, 0);
-                
+
                                             .nav-item {
                                                 .nav-link {
                                                     color: var(--blackColor);
-                
+
                                                     &.active, &:hover {
                                                         color: var(--primaryColor);
                                                     }
@@ -430,10 +430,10 @@
         }
         .others-option {
             margin-left: auto;
-    
+
             .option-item {
                 margin-left: 25px;
-    
+
                 .default-btn {
                     background-color: var(--primaryColor);
                     border-color: var(--primaryColor);
@@ -448,7 +448,7 @@
                     &:hover {
                         background-color: var(--blackColor);
                         border-color: var(--blackColor);
-    
+
                         i {
                             transform: translateY(-50%) rotate(0);
                         }
@@ -463,7 +463,7 @@
                     position: relative;
                     background-color: transparent;
                     transition: var(--transition);
-    
+
                     &:hover {
                         color: var(--primaryColor);
                     }
@@ -477,7 +477,7 @@
                     position: relative;
                     background-color: transparent;
                     transition: var(--transition);
-                    
+
                     &:hover {
                         color: var(--primaryColor);
                     }
@@ -671,7 +671,7 @@
             margin-top: 20px;
             padding-top: 20px;
             border-top: 1px solid #eeeeee;
-    
+
             h4 {
                 font-size: 20px;
                 margin-bottom: 20px;
@@ -680,12 +680,12 @@
                 padding-left: 0;
                 margin-bottom: 0;
                 list-style-type: none;
-        
+
                 li {
                     margin-bottom: 13px;
                     padding-left: 27px;
                     position: relative;
-        
+
                     i {
                         color: var(--primaryColor);
                         position: absolute;
@@ -704,11 +704,11 @@
             }
             .social-links {
                 margin-top: 15px;
-        
+
                 li {
                     display: inline-block;
                     margin-right: 7px;
-        
+
                     a {
                         width: 35px;
                         height: 35px;
@@ -719,7 +719,7 @@
                         text-align: center;
                         color: var(--blackColor);
                         background-color: rgba(0, 0, 0, .05);
-        
+
                         i {
                             left: 0;
                             right: 0;
@@ -745,7 +745,7 @@
 
             .option-item {
                 margin-left: 25px;
-    
+
                 .default-btn {
                     background-color: var(--primaryColor);
                     border-color: var(--primaryColor);
@@ -798,7 +798,7 @@
         .top-header-info {
             text-align: center;
             margin-bottom: 13px;
-    
+
             li {
                 padding-left: 22px;
                 font-size: 13px;
@@ -817,7 +817,7 @@
         }
         .top-header-right-side {
             text-align: center;
-    
+
             li {
                 padding-left: 22px;
                 font-size: 13px;
@@ -1032,14 +1032,13 @@
             }
             .navbar-toggler {
                 color: var(--blackColor);
-                font-size: inherit;
                 box-shadow: unset;
                 border: none;
                 padding: 0;
-    
+
                 .burger-menu {
                     cursor: pointer;
-    
+
                     span {
                         height: 3px;
                         width: 30px;
@@ -1111,10 +1110,10 @@
     // Sidebar Modal
     .sidebarModal {
         width: 305px;
-        
+
         .offcanvas-header {
             padding: 18px;
-    
+
             .close-btn {
                 font-size: 16px;
                 top: 2px;
@@ -1135,7 +1134,7 @@
             .offcanvas-contact-info {
                 margin-top: 20px;
                 padding-top: 20px;
-        
+
                 h4 {
                     font-size: 17px;
                     margin-bottom: 18px;
@@ -1154,7 +1153,7 @@
 
                 .option-item {
                     margin-left: 20px;
-        
+
                     .default-btn {
                         i {
                             font-size: 18px;
@@ -1187,7 +1186,7 @@
     // Sidebar Modal
     .sidebarModal {
         width: 400px;
-        
+
         .offcanvas-header {
             padding: 25px;
         }
@@ -1222,7 +1221,7 @@
                 margin-right: 15px;
                 padding-left: 24px;
                 font-size: 14px;
-    
+
                 i {
                     font-size: 15px;
                 }
@@ -1233,7 +1232,7 @@
                 margin-right: 15px;
                 padding-left: 24px;
                 font-size: 14px;
-    
+
                 i {
                     font-size: 15px;
                 }
@@ -1433,14 +1432,13 @@
             }
             .navbar-toggler {
                 color: var(--blackColor);
-                font-size: inherit;
                 box-shadow: unset;
                 border: none;
                 padding: 0;
-    
+
                 .burger-menu {
                     cursor: pointer;
-    
+
                     span {
                         height: 3px;
                         width: 30px;
@@ -1480,7 +1478,7 @@
     .searchModal {
         .modal-content {
             max-width: 600px;
-            
+
             form {
                 .form-control {
                     font-size: 15px;
@@ -1537,7 +1535,7 @@
             };
             .navbar-nav {
                 margin-left: 20px;
-    
+
                 .nav-item {
                     margin: {
                         left: 10px;
@@ -1551,7 +1549,7 @@
             .others-option {
                 .option-item {
                     margin-left: 25px;
-    
+
                     .default-btn {
                         padding: {
                             top: 13px;
