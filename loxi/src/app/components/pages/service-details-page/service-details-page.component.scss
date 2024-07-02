@@ -1,0 +1,290 @@
+.service-details-sidebar {
+    margin-right: 70px;
+
+    ul {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style-type: none;
+
+        li {
+            a {
+                display: block;
+                padding: 17px 22px;
+                border-bottom: 1px solid var(--blackColor);
+                font: {
+                    size: 22px;
+                    weight: 500;
+                };
+                &.active {
+                    background-color: var(--blackColor);
+                    color: var(--whiteColor);
+                    border-radius: 7px;
+                }
+            }
+            &:first-child {
+                a {
+                    border-top: 1px solid var(--blackColor);
+                }
+            }
+        }
+    }
+}
+.service-details-desc {
+    .image {
+        border-radius: 20px;
+
+        img {
+            border-radius: 20px;
+        }
+    }
+    h2 {
+        font-size: 36px;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 15px;
+
+        &:not(:first-child) {
+            margin-top: 30px;
+        }
+    }
+    p {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        strong {
+            color: var(--blackColor);
+            font-weight: 600;
+        }
+        a {
+            color: var(--primaryColor);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .icon-box {
+        position: relative;
+        padding-left: 35px;
+
+        i {
+            color: var(--secondaryColor);
+            transform: translateY(-50%);
+            position: absolute;
+            font-size: 22px;
+            margin-top: 1px;
+            line-height: 1;
+            top: 50%;
+            left: 0;
+        }
+        h5 {
+            font: {
+                size: 20px;
+                weight: 600;
+            };
+        }
+    }
+    .mt-10 {
+        margin-top: 10px;
+    }
+    .row {
+        img {
+            border-radius: 15px;
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .service-details-sidebar {
+        margin: {
+            right: 0;
+            bottom: 25px;
+        };
+        ul {
+            li {
+                a {
+                    padding: 12px 15px;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    .service-details-desc {
+        .image {
+            border-radius: 10px;
+    
+            img {
+                border-radius: 10px;
+            }
+        }
+        h2 {
+            font-size: 24px;
+        }
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 10px;
+    
+            &:not(:first-child) {
+                margin-top: 25px;
+            }
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .icon-box {
+            padding-left: 25px;
+    
+            i {
+                font-size: 17px;
+            }
+            h5 {
+                font-size: 15px;
+            }
+        }
+        .mt-10 {
+            margin-top: 0;
+        }
+        .row {
+            img {
+                border-radius: 10px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .service-details-sidebar {
+        margin: {
+            right: 0;
+            bottom: 25px;
+        };
+        ul {
+            li {
+                a {
+                    padding: 15px 20px;
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+    .service-details-desc {
+        .image {
+            border-radius: 15px;
+    
+            img {
+                border-radius: 15px;
+            }
+        }
+        h2 {
+            font-size: 25px;
+        }
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 12px;
+    
+            &:not(:first-child) {
+                margin-top: 25px;
+            }
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .icon-box {
+            padding-left: 29px;
+    
+            i {
+                font-size: 19px;
+            }
+            h5 {
+                font-size: 16px;
+            }
+        }
+        .mt-10 {
+            margin-top: 0;
+        }
+        .row {
+            img {
+                border-radius: 10px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .service-details-sidebar {
+        margin-right: 0;
+    
+        ul {
+            li {
+                a {
+                    padding: 15px 20px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .service-details-desc {
+        h2 {
+            font-size: 30px;
+        }
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 12px;
+    
+            &:not(:first-child) {
+                margin-top: 25px;
+            }
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .icon-box {
+            padding-left: 30px;
+    
+            i {
+                font-size: 20px;
+            }
+            h5 {
+                font-size: 15px;
+            }
+        }
+        .mt-10 {
+            margin-top: 0;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .service-details-sidebar {
+        margin-right: 30px;
+    }
+    .service-details-desc {
+        .icon-box {
+            padding-left: 30px;
+    
+            i {
+                font-size: 20px;
+            }
+            h5 {
+                font-size: 18px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

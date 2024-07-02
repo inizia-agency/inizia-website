@@ -1,0 +1,29 @@
+<!-- Default Let's Talk Section -->
+<div
+    class="lets-talk-area dotted-bg bg-f7ffe2"
+    [ngClass]="{'d-none': router.url === '/index-3'}"
+>
+    <div class="container">
+        <div class="lets-talk-inner-box bg-black">
+            <h2>Let's Make Something Amazing Together</h2>
+            <a routerLink="/contact" class="default-btn">Let’s Talk</a>
+            <div class="shape6"><img src="assets/images/shape/shape6.png" alt="shape6"></div>
+            <div class="shape7"><img src="assets/images/shape/shape7.png" alt="shape7"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Let's Talk Section for Home Demo - 3 -->
+<div
+    class="lets-talk-area dotted-bg d-none"
+    [ngClass]="{'d-block': router.url === '/index-3'}"
+>
+    <div class="container">
+        <div class="lets-talk-inner-box bg-black">
+            <h2>Let's Make Something Amazing Together</h2>
+            <a routerLink="/contact" class="default-btn">Let’s Talk</a>
+            <div class="shape6"><img src="assets/images/shape/shape6.png" alt="shape6"></div>
+            <div class="shape7"><img src="assets/images/shape/shape7.png" alt="shape7"></div>
+        </div>
+    </div>
+</div>

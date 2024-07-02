@@ -1,0 +1,1819 @@
+<!-- Default Header Section -->
+<header
+    class="header-area"
+    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3' || router.url === '/index-4'}"
+>
+
+    <!-- Top Header -->
+    <div class="top-header-area">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6">
+                    <ul class="top-header-info">
+                        <li>
+                            <i class="flaticon-envelope"></i>
+                            <a href="mailto:hello&#64;loxi.com">hello&#64;loxi.com</a>
+                        </li>
+                        <li>
+                            <i class="flaticon-phone-call"></i>
+                            <a href="tel:+2414524526">+241 452 4526</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <ul class="top-header-right-side">
+                        <li>
+                            <img src="assets/images/usa.png" alt="usa">
+                            <select class="form-select">
+                                <option selected>English</option>
+                                <option value="1">Spanish</option>
+                                <option value="2">French</option>
+                                <option value="3">Arabic</option>
+                            </select>
+                        </li>
+                        <li>
+                            <a routerLink="/profile-authentication"><i class="flaticon-user-2"></i>Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div
+        class="navbar-area"
+        [ngClass]="{'sticky': isSticky}"
+    >
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg" [class.active]="classApplied">
+                <a class="navbar-brand" routerLink="/">
+                    <img src="assets/images/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" (click)="toggleClass()">
+                    <span class="burger-menu">
+                        <span class="top-bar"></span>
+                        <span class="middle-bar"></span>
+                        <span class="bottom-bar"></span>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Home Demo - 1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Home Demo - 2
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Home Demo - 3
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/index-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Home Demo - 4
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/services" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Services v1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/services-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Services v2
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/services-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Services v3
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/services-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Services v4
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/service-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Service Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Portfolio
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/projects" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Portfolio v1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/projects-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Portfolio v2
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/projects-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Portfolio v3
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/project-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Portfolio Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/about" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Team
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/pricing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Pricing
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/clients-feedback" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Client's Feedback
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/faq" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        FAQ
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                        My Account
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                                Login
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                                Register
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a routerLink="/forgot-password" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                                Forgot Password
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/privacy-policy" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/terms-conditions" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Terms & Conditions
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/not-found" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        404 Error Page
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/blog-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Blog Grid
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/blog-right-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Blog Right Sidebar
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/blog-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Blog Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav for-responsive">
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Home Demo - 1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Home Demo - 2
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Home Demo - 3
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/index-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Home Demo - 4
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/services" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Services v1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/services-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Services v2
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/services-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Services v3
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/services-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Services v4
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/service-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Service Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Portfolio
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/projects" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Portfolio v1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/projects-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Portfolio v2
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/projects-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Portfolio v3
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/project-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Portfolio Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/about" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Team
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/pricing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Pricing
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/clients-feedback" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Client's Feedback
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/faq" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        FAQ
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                        My Account
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                                Login
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                                Register
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a routerLink="/forgot-password" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                                Forgot Password
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/privacy-policy" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/terms-conditions" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Terms & Conditions
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/not-found" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        404 Error Page
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/blog-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Blog Grid
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/blog-right-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Blog Right Sidebar
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/blog-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Blog Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="others-option d-flex align-items-center">
+                        <div class="option-item">
+                            <button type="button" class="search-btn" (click)="toggleSearchClass()">
+                                <i class="flaticon-search"></i>
+                            </button>
+                        </div>
+                        <div class="option-item">
+                            <a routerLink="/contact" class="default-btn">Let’s Talk <i class="flaticon-comment"></i></a>
+                        </div>
+                        <div class="option-item">
+                            <button class="sidebar-toggler" (click)="toggleSidebarClass()">
+                                <i class="flaticon-menu-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+</header>
+
+<!-- Header for Home Demo - 2 -->
+<header
+    class="header-area d-none"
+    [ngClass]="{'d-block': router.url === '/index-2'}"
+>
+
+    <!-- Navbar -->
+    <div
+        class="navbar-area style-two"
+        [ngClass]="{'sticky': isSticky}"
+    >
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg" [class.active]="classApplied">
+                <a class="navbar-brand" routerLink="/">
+                    <img src="assets/images/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" (click)="toggleClass()">
+                    <span class="burger-menu">
+                        <span class="top-bar"></span>
+                        <span class="middle-bar"></span>
+                        <span class="bottom-bar"></span>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Home Demo - 1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Home Demo - 2
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Home Demo - 3
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/index-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Home Demo - 4
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/services" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Services v1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/services-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Services v2
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/services-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Services v3
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/services-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Services v4
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/service-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Service Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Portfolio
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/projects" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Portfolio v1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/projects-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Portfolio v2
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/projects-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Portfolio v3
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/project-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Portfolio Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/about" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Team
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/pricing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Pricing
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/clients-feedback" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Client's Feedback
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/faq" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        FAQ
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                        My Account
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                                Login
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                                Register
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a routerLink="/forgot-password" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                                Forgot Password
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/privacy-policy" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/terms-conditions" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Terms & Conditions
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/not-found" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        404 Error Page
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/blog-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Blog Grid
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/blog-right-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Blog Right Sidebar
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/blog-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Blog Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav for-responsive">
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Home Demo - 1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Home Demo - 2
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Home Demo - 3
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/index-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Home Demo - 4
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/services" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Services v1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/services-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Services v2
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/services-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Services v3
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/services-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Services v4
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/service-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Service Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Portfolio
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/projects" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Portfolio v1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/projects-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Portfolio v2
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/projects-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Portfolio v3
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/project-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Portfolio Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/about" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Team
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/pricing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Pricing
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/clients-feedback" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Client's Feedback
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/faq" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        FAQ
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                        My Account
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                                Login
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                                Register
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a routerLink="/forgot-password" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                                Forgot Password
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/privacy-policy" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/terms-conditions" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Terms & Conditions
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/not-found" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        404 Error Page
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/blog-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Blog Grid
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/blog-right-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Blog Right Sidebar
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/blog-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Blog Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="others-option d-flex align-items-center">
+                        <div class="option-item">
+                            <button type="button" class="search-btn" (click)="toggleSearchClass()">
+                                <i class="flaticon-search"></i>
+                            </button>
+                        </div>
+                        <div class="option-item">
+                            <a routerLink="/contact" class="default-btn">Let’s Talk <i class="flaticon-comment"></i></a>
+                        </div>
+                        <div class="option-item">
+                            <button class="sidebar-toggler" (click)="toggleSidebarClass()">
+                                <i class="flaticon-menu-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+</header>
+
+<!-- Header for Home Demo - 3 -->
+<header
+    class="header-area d-none"
+    [ngClass]="{'d-block': router.url === '/index-3'}"
+>
+
+    <!-- Top Header -->
+    <div class="top-header-area">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6">
+                    <ul class="top-header-info">
+                        <li>
+                            <i class="flaticon-envelope"></i>
+                            <a href="mailto:hello&#64;loxi.com">hello&#64;loxi.com</a>
+                        </li>
+                        <li>
+                            <i class="flaticon-phone-call"></i>
+                            <a href="tel:+2414524526">+241 452 4526</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <ul class="top-header-right-side">
+                        <li>
+                            <img src="assets/images/usa.png" alt="usa">
+                            <select class="form-select">
+                                <option selected>English</option>
+                                <option value="1">Spanish</option>
+                                <option value="2">French</option>
+                                <option value="3">Arabic</option>
+                            </select>
+                        </li>
+                        <li>
+                            <a routerLink="/profile-authentication"><i class="flaticon-user-2"></i>Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div
+        class="navbar-area style-three"
+        [ngClass]="{'sticky': isSticky}"
+    >
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg" [class.active]="classApplied">
+                <a class="navbar-brand" routerLink="/">
+                    <img src="assets/images/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" (click)="toggleClass()">
+                    <span class="burger-menu">
+                        <span class="top-bar"></span>
+                        <span class="middle-bar"></span>
+                        <span class="bottom-bar"></span>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Home Demo - 1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Home Demo - 2
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Home Demo - 3
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/index-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Home Demo - 4
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/services" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Services v1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/services-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Services v2
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/services-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Services v3
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/services-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Services v4
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/service-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Service Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Portfolio
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/projects" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Portfolio v1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/projects-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Portfolio v2
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/projects-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Portfolio v3
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/project-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Portfolio Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/about" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Team
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/pricing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Pricing
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/clients-feedback" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Client's Feedback
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/faq" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        FAQ
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                        My Account
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                                Login
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                                Register
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a routerLink="/forgot-password" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                                Forgot Password
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/privacy-policy" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/terms-conditions" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Terms & Conditions
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/not-found" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        404 Error Page
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/blog-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Blog Grid
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/blog-right-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Blog Right Sidebar
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/blog-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Blog Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav for-responsive">
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Home Demo - 1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Home Demo - 2
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Home Demo - 3
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/index-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Home Demo - 4
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/services" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Services v1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/services-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Services v2
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/services-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Services v3
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/services-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Services v4
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/service-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Service Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Portfolio
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/projects" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Portfolio v1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/projects-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Portfolio v2
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/projects-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Portfolio v3
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/project-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Portfolio Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/about" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Team
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/pricing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Pricing
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/clients-feedback" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Client's Feedback
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/faq" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        FAQ
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                        My Account
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                                Login
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                                Register
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a routerLink="/forgot-password" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                                Forgot Password
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/privacy-policy" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/terms-conditions" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Terms & Conditions
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/not-found" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        404 Error Page
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a routerLink="/blog-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Blog Grid
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/blog-right-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Blog Right Sidebar
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/blog-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        Blog Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="others-option d-flex align-items-center">
+                        <div class="option-item">
+                            <button type="button" class="search-btn" (click)="toggleSearchClass()">
+                                <i class="flaticon-search"></i>
+                            </button>
+                        </div>
+                        <div class="option-item">
+                            <a routerLink="/contact" class="default-btn">Let’s Talk <i class="flaticon-comment"></i></a>
+                        </div>
+                        <div class="option-item">
+                            <button class="sidebar-toggler" (click)="toggleSidebarClass()">
+                                <i class="flaticon-menu-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+</header>
+
+<!-- Header for Home Demo - 4 -->
+<div
+    class="navbar-area style-four dotted-bg d-none"
+    [ngClass]="{'d-block': router.url === '/index-4', 'sticky': isSticky}"
+>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-transparent p-0" [class.active]="classApplied">
+            <a class="navbar-brand" routerLink="/">
+                <img src="assets/images/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" (click)="toggleClass()">
+                <span class="burger-menu">
+                    <span class="top-bar"></span>
+                    <span class="middle-bar"></span>
+                    <span class="bottom-bar"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Home Demo - 1
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Home Demo - 2
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Home Demo - 3
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/index-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Home Demo - 4
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/services" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Services v1
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/services-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Services v2
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/services-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Services v3
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/services-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Services v4
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/service-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Service Details
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/projects" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Portfolio v1
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/projects-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Portfolio v2
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/projects-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Portfolio v3
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/project-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Portfolio Details
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/about" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Team
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/pricing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/clients-feedback" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Client's Feedback
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/faq" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                    My Account
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Login
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Register
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a routerLink="/forgot-password" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Forgot Password
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/privacy-policy" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/terms-conditions" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Terms & Conditions
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/not-found" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    404 Error Page
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/blog-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Blog Grid
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/blog-right-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Blog Right Sidebar
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/blog-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Blog Details
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav for-responsive">
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Home Demo - 1
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Home Demo - 2
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Home Demo - 3
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/index-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Home Demo - 4
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/services" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Services v1
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/services-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Services v2
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/services-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Services v3
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/services-4" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Services v4
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/service-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Service Details
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/projects" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Portfolio v1
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/projects-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Portfolio v2
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/projects-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Portfolio v3
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/project-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Portfolio Details
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/about" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Team
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/pricing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/clients-feedback" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Client's Feedback
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/faq" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                    My Account
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                            Login
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                            Register
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a routerLink="/forgot-password" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                            Forgot Password
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/privacy-policy" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/terms-conditions" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Terms & Conditions
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/not-found" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    404 Error Page
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/blog-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Blog Grid
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/blog-right-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Blog Right Sidebar
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/blog-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Blog Details
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <div class="others-option d-flex align-items-center">
+                    <div class="option-item">
+                        <button type="button" class="search-btn" (click)="toggleSearchClass()">
+                            <i class="flaticon-search"></i>
+                        </button>
+                    </div>
+                    <div class="option-item">
+                        <a routerLink="/contact" class="default-btn">Let’s Talk <i class="flaticon-comment"></i></a>
+                    </div>
+                    <div class="option-item">
+                        <button class="sidebar-toggler" (click)="toggleSidebarClass()">
+                            <i class="flaticon-menu-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!-- Search Modal -->
+<div class="searchModal" [class.active]="searchClassApplied">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form>
+                <input type="text" class="form-control" placeholder="Search here....">
+                <button type="submit"><i class="flaticon-search"></i></button>
+            </form>
+            <button type="button" class="btn-close" (click)="toggleSearchClass()"></button>
+        </div>
+    </div>
+</div>
+
+<!-- Sidebar Modal -->
+<div class="sidebarModal" [class.active]="sidebarClassApplied">
+    <div class="offcanvas-header">
+        <a routerLink="/" class="logo d-inline-block">
+            <img src="assets/images/logo.png" alt="logo">
+        </a>
+        <button type="button" class="close-btn" (click)="toggleSidebarClass()">
+            <i class="flaticon-close"></i>
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="offcanvas-navbar">
+            <li class="offcanvas-nav-item">
+                <a class="offcanvas-nav-link" routerLink="/">
+                    Home
+                </a>
+            </li>
+            <li class="offcanvas-nav-item">
+                <a class="offcanvas-nav-link" routerLink="/">
+                    Team
+                </a>
+            </li>
+            <li class="offcanvas-nav-item">
+                <a class="offcanvas-nav-link" routerLink="/about">
+                    About Us
+                </a>
+            </li>
+            <li class="offcanvas-nav-item">
+                <a class="offcanvas-nav-link" routerLink="/services">
+                    Services
+                </a>
+            </li>
+            <li class="offcanvas-nav-item">
+                <a class="offcanvas-nav-link" routerLink="/projects">
+                    Portfolio
+                </a>
+            </li>
+            <li class="offcanvas-nav-item">
+                <a class="offcanvas-nav-link" routerLink="/blog-grid">
+                    Blog
+                </a>
+            </li>
+            <li class="offcanvas-nav-item">
+                <a class="offcanvas-nav-link" routerLink="/contact">
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+        <div class="offcanvas-contact-info">
+            <h4>Contact Info</h4>
+            <ul class="info">
+                <li>
+                    <i class="bx bx-envelope"></i>
+                    <a href="mailto:hello&#64;loxi.com">hello&#64;loxi.com</a>
+                </li>
+                <li>
+                    <i class="bx bx-phone-call"></i>
+                    <a href="tel:+2414524526">+241 452 4526</a>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                    2750 Quadra Street Victoria Road, New York, USA
+                </li>
+            </ul>
+            <ul class="social-links list-unstyled mb-0">
+                <li>
+                    <a href="#" target="_blank"><i class="flaticon-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><i class="flaticon-twitter-1"></i></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><i class="flaticon-instagram-1"></i></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><i class="flaticon-linkedin-1"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="others-option d-flex align-items-center">
+            <div class="option-item">
+                <a routerLink="/contact" class="default-btn">Let’s Talk <i class="flaticon-comment"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
