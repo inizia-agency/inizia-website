@@ -1,11 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: BrownSugar;
+    src: url("./assets/fonts/brown-sugar.ttf") format("truetype"),
+
+        url("./assets/fonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype"),
+        url("./assets/fonts/Montserrat/static/Montserrat-Medium.ttf") format("truetype"),
+        url("./assets/fonts/Montserrat/static/Montserrat-Light.ttf") format("truetype"),
+        url("./assets/fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype"),
+        url("./assets/fonts/Montserrat/static/Montserrat-Italic.ttf") format("truetype"),
+
+        url("./assets/fonts/Courier_Prime/CourierPrime-Bold.ttf") format("truetype"),
+        url("./assets/fonts/Courier_Prime/CourierPrime-Italic.ttf") format("truetype"),
+        url("./assets/fonts/Courier_Prime/CourierPrime-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("./assets/fonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype"),
+        url("./assets/fonts/Montserrat/static/Montserrat-Medium.ttf") format("truetype"),
+        url("./assets/fonts/Montserrat/static/Montserrat-Light.ttf") format("truetype"),
+        url("./assets/fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype"),
+        url("./assets/fonts/Montserrat/static/Montserrat-Italic.ttf") format("truetype"),
+
+        url("./assets/fonts/Courier_Prime/CourierPrime-Bold.ttf") format("truetype"),
+        url("./assets/fonts/Courier_Prime/CourierPrime-Italic.ttf") format("truetype"),
+        url("./assets/fonts/Courier_Prime/CourierPrime-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: CourierPrime;
+    src: url("./assets/fonts/Courier_Prime/CourierPrime-Italic.ttf") format("truetype"),
+        url("./assets/fonts/Courier_Prime/CourierPrime-Regular.ttf") format("truetype");
+}
+
 :root {
-    --fontFamily: 'Prompt', sans-serif;
-    --primaryColor: #fb4834;
-    --secondaryColor: #f38704;
+    --primaryFontFamily: 'Montserrat';
+    --secondaryFontFamily: 'CourierPrime';
+    --thirdFontFamily: 'BrownSugar';
+    --primaryColor: #B75707;
+    --secondaryColor: #A1BAD0;
+    --thirdColor: #B2B002;
+    --fourthColor: #111717;
     --paragraphColor: #343434;
     --whiteColor: #ffffff;
-    --blackColor: #000000;
+    --blackColor: #111717;
     --transition: .5s;
     --fontSize: 15px;
 }
@@ -15,12 +54,23 @@ body {
     color: var(--blackColor);
     font: {
         size: var(--fontSize);
-        family: var(--fontFamily);
+        family: var(--primaryFontFamily);
     };
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     color: var(--blackColor);
     font-weight: 700;
+    font: {
+        family: var(--thirdFontFamily);
+    };
+}
+.h6, h6 {
+    color: var(--blackColor);
+    font-weight: 100;
+    font-style: italic;
+    font: {
+        family: var(--secondaryFontFamily);
+    };
 }
 a {
     transition: var(--transition);
@@ -96,23 +146,23 @@ p {
         size: cover;
     };
 }
-.bg-fbecd7 {
-    background-color: #fbecd7;
+.bg-beige {
+    background-color: #EFEDE0;
 }
-.bg-f7ffe2 {
-    background-color: #f7ffe2;
+.bg-dark {
+    background-color: #111717;
 }
-.bg-f4d9d3 {
-    background-color: #f4d9d3;
+.bg-green {
+    background-color: var(--thirdColor);
 }
-.bg-f8f8f8 {
-    background-color: #f8f8f8;
+.bg-orange {
+    background-color: var(--primaryColor);
 }
-.bg-ffe6e3 {
-    background-color: #ffe6e3;
+.bg-blue {
+    background-color: var(--secondaryColor);
 }
 .bg-f4f4f4 {
-    background-color: #f4f4f4;
+    background-color: #EFEDE0
 }
 .bg-main-color {
     background-color: var(--primaryColor);
@@ -131,10 +181,10 @@ p {
         display: block;
         font-size: 18px;
         margin-bottom: 5px;
-        color: var(--secondaryColor);
+        color: var(--thirdColor);
 
         &.main-color {
-            color: var(--primaryColor);
+            color: var(--secondaryColor);
         }
     }
     h2 {
@@ -152,13 +202,12 @@ p {
     box-shadow: unset;
     position: relative;
     border-radius: 5px;
-    position: relative;
     display: inline-block;
     color: var(--whiteColor);
     padding: 15px 65px 15px 35px;
     transition: var(--transition);
     border: 1px solid var(--blackColor);
-    background-color: var(--blackColor);
+    background-color: var(--thirdColor);
     font: {
         size: 16px;
         weight: 500;
@@ -185,6 +234,81 @@ p {
         }
     }
 }
+
+.second-default-btn {
+    box-shadow: unset;
+    position: relative;
+    border-radius: 5px;
+    display: inline-block;
+    color: var(--whiteColor);
+    padding: 15px 65px 15px 35px;
+    transition: var(--transition);
+    border: 1px solid var(--blackColor);
+    background-color: var(--primaryColor);
+    font: {
+        size: 16px;
+        weight: 500;
+    };
+    i {
+        top: 50%;
+        right: 30px;
+        line-height: 1;
+        transition: .3s;
+        font-size: 25px;
+        margin-top: 2.6px;
+        position: absolute;
+        color: var(--whiteColor);
+        transform: translateY(-50%);
+    }
+    &:hover {
+        background-color: var(--secondaryColor);
+        border-color: var(--blackColor);
+        color: var(--whiteColor);
+
+        i {
+            transform: translateY(-50%) rotate(45deg);
+            color: var(--whiteColor);
+        }
+    }
+}
+
+.third-default-btn {
+    box-shadow: unset;
+    position: relative;
+    border-radius: 5px;
+    display: inline-block;
+    color: var(--whiteColor);
+    padding: 15px 65px 15px 35px;
+    transition: var(--transition);
+    border: 1px solid var(--blackColor);
+    background-color: var(--secondaryColor);
+    font: {
+        size: 16px;
+        weight: 500;
+    };
+    i {
+        top: 50%;
+        right: 30px;
+        line-height: 1;
+        transition: .3s;
+        font-size: 25px;
+        margin-top: 2.6px;
+        position: absolute;
+        color: var(--whiteColor);
+        transform: translateY(-50%);
+    }
+    &:hover {
+        background-color: var(--thirdColor);
+        border-color: var(--blackColor);
+        color: var(--whiteColor);
+
+        i {
+            transform: translateY(-50%) rotate(45deg);
+            color: var(--whiteColor);
+        }
+    }
+}
+
 
 // Pricing Tabs
 .pricing-tabs {
@@ -293,7 +417,7 @@ p {
 
             .owl-dot {
                 display: block;
-                
+
                 span {
                     width: 12px;
                     height: 12px;
@@ -376,8 +500,8 @@ p {
 
 // Shape
 .shape1 {
-    left: 34%;
-    bottom: 9%;
+    left: 15%;
+    bottom: 32%;
     position: absolute;
     pointer-events: none;
 
@@ -664,7 +788,6 @@ p {
                         right: 40px;
                         content: "\f105";
                         position: absolute;
-                        font-family: flaticon_loxi;
                         transition: var(--transition);
                         transform: translateY(-50%) rotate(-90deg);
                     }
@@ -678,14 +801,14 @@ p {
                     p {
                         font-size: 17px;
                         color: var(--paragraphColor);
-        
+
                         strong {
                             color: var(--blackColor);
                             font-weight: 600;
                         }
                         a {
                             color: var(--primaryColor);
-        
+
                             &:hover {
                                 text-decoration: underline;
                             }
@@ -746,25 +869,25 @@ p {
 }
 @keyframes moveleftbounce {
     0% {
-        transform: translateX(0); 
+        transform: translateX(0);
     }
     50% {
-        transform: translateX(10px); 
+        transform: translateX(10px);
     }
     100% {
-        transform: translateX(0); 
-    } 
+        transform: translateX(0);
+    }
 }
 @keyframes movetopbounce {
     0% {
-        transform: translateY(0); 
+        transform: translateY(0);
     }
     50% {
-        transform: translateY(10px); 
+        transform: translateY(10px);
     }
     100% {
-        transform: translateY(0); 
-    } 
+        transform: translateY(0);
+    }
 }
 @keyframes run {
     0% {
@@ -892,9 +1015,9 @@ p {
     }
 
     // Shape
-    .shape1, .shape2, .shape8, .shape9, .shape10, .shape3, .shape4 {
-        display: none;
-    }
+    //.shape1, .shape2, .shape8, .shape9, .shape10, .shape3, .shape4 {
+    //    display: none;
+    //}
 
     // Pricing Tabs
     .pricing-tabs {
@@ -929,10 +1052,10 @@ p {
                 position: relative;
                 right: 0;
                 top: 0;
-    
+
                 .owl-dot {
                     display: inline-block;
-                    
+
                     span {
                         margin: 0 3px;
                     }
@@ -956,7 +1079,7 @@ p {
         width: 40px !important;
         bottom: 15px !important;
         height: 40px !important;
-    
+
         .symbol-container {
             &::before {
                 font-size: 22px;
@@ -994,7 +1117,7 @@ p {
     // Pagination
     .pagination-area {
         margin-top: 10px;
-    
+
         .pagination {
             .page-item {
                 margin: {
@@ -1017,7 +1140,7 @@ p {
             }
         }
     }
-    
+
     // FAQ
     .faq-accordion {
         .panel {
@@ -1163,10 +1286,10 @@ p {
                 position: relative;
                 right: 0;
                 top: 0;
-    
+
                 .owl-dot {
                     display: inline-block;
-                    
+
                     span {
                         margin: 0 3px;
                     }
@@ -1205,7 +1328,7 @@ p {
     // Pagination
     .pagination-area {
         margin-top: 10px;
-    
+
         .pagination {
             .page-item {
                 .page-link {
@@ -1239,7 +1362,7 @@ p {
                 .panel-collapse {
                     .card-body {
                         padding: 20px 25px;
-            
+
                         p {
                             font-size: 15px;
                         }
@@ -1273,9 +1396,9 @@ p {
     }
 
     // Shape
-    .shape1, .shape2, .shape8, .shape3, .shape4 {
-        display: none;
-    }
+    //.shape1, .shape2, .shape8, .shape3, .shape4 {
+    //    display: none;
+    //}
 
     // Owl Carousel
     .feedback-inner-box {
@@ -1335,7 +1458,7 @@ p {
                 .panel-collapse {
                     .card-body {
                         padding: 20px 30px;
-            
+
                         p {
                             font-size: 16px;
                         }
@@ -1365,7 +1488,7 @@ p {
 
     // Shape
     .shape1 {
-        left: 34%;
+        left: 15%;
         bottom: 9%;
     }
     .shape2 {

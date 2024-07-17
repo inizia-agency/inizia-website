@@ -1,6 +1,6 @@
 <!-- Default Header Section -->
 <header
-    class="header-area"
+    class="header-area header-container"
     [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3' || router.url === '/index-4'}"
 >
     <!-- Navbar -->
@@ -11,7 +11,7 @@
         <div>
             <nav class="navbar navbar-expand-lg" [class.active]="classApplied">
                 <a class="navbar-brand" routerLink="/">
-                    <img src="assets/images/logo.png" alt="logo">
+                    <h1 style="font-size: 60px;">A.</h1>
                 </a>
                 <button class="navbar-toggler" type="button" (click)="toggleSidebarClass()">
                     <i class="flaticon-menu-2"></i>
@@ -29,16 +29,9 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a routerLink="/services" href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            <a routerLink="/services" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                                 Services
                             </a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/service-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                        Service Details
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
                         <li class="nav-item">
                             <a routerLink="/projects" href="javascript:void(0)" class="dropdown-toggle nav-link">
@@ -151,8 +144,8 @@
                         </li>
                     </ul>
                     <div class="others-option d-flex align-items-center">
-                        <div class="option-item">
-                            <a routerLink="/contact" class="default-btn">Let’s Talk <i class="flaticon-comment"></i></a>
+                        <div >
+                            <a routerLink="/contact" class="second-default-btn">Let’s Talk <i class="flaticon-comment"></i></a>
                         </div>
                     </div>
                 </div>

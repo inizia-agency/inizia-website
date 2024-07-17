@@ -13,6 +13,9 @@
         };
     }
 }
+.header-container {
+    border-bottom: 1px solid var(--blackColor);
+}
 .d-none {
     &.d-block {
         display: block !important;

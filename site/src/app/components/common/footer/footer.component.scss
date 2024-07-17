@@ -10,8 +10,8 @@
     }
     &.bg-f8f8f8 {
         .single-footer-widget {
-            color: var(--blackColor);
-        
+            color: var(--w);
+
             p {
                 color: var(--blackColor);
             }
@@ -22,11 +22,11 @@
                 li {
                     a {
                         color: var(--blackColor);
-                        background-color: var(--whiteColor);
-        
+                        background-color: var(--blackColor);
+
                         &:hover {
-                            background-color: var(--primaryColor);
-                            color: var(--whiteColor);
+                            background-color: var(--whiteColor);
+                            color: var(--blackColor);
                         }
                     }
                 }
@@ -34,12 +34,12 @@
             .custom-links {
                 li {
                     color: var(--blackColor);
-        
+
                     a {
                         color: var(--blackColor);
-        
+
                         &:hover {
-                            color: var(--primaryColor);
+                            color: var(--whiteColor);
                         }
                     }
                 }
@@ -47,12 +47,12 @@
             .footer-contact-info {
                 li {
                     color: var(--blackColor);
-        
+
                     a {
                         color: var(--blackColor);
-        
+
                         &:hover {
-                            color: var(--primaryColor);
+                            color: var(--whiteColor);
                         }
                     }
                 }
@@ -61,16 +61,16 @@
     }
 }
 .single-footer-widget {
-    color: var(--whiteColor);
+    color: var(--blackColor);
 
     .logo {
         margin-bottom: 25px;
     }
     p {
-        color: #eeeeee;
+        color: var(--blackColor);
     }
     h4 {
-        color: var(--whiteColor);
+        color: var(--blackColor);
         margin-bottom: 25px;
         font-size: 22px;
     }
@@ -89,7 +89,7 @@
                 position: relative;
                 border-radius: 50%;
                 text-align: center;
-                color: var(--whiteColor);
+                color: var(--blackColor);
                 background-color: rgba(255, 255, 255, .14);
 
                 i {
@@ -100,10 +100,11 @@
                     margin-top: .5px;
                     position: absolute;
                     transform: translateY(-50%);
+                    color: var(--blackColor);
                 }
                 &:hover {
-                    background-color: var(--primaryColor);
-                    color: var(--whiteColor);
+                    background-color: var(--whiteColor);
+                    color: var(--blackColor);
                 }
             }
             &:last-child {
@@ -118,14 +119,14 @@
 
         li {
             margin-bottom: 13px;
-            color: #eeeeee;
+            color: var(--blackColor);
 
             a {
                 display: inline-block;
-                color: #eeeeee;
+                color: var(--blackColor);
 
                 &:hover {
-                    color: var(--primaryColor);
+                    color: var(--whiteColor);
                 }
             }
             &:last-child {
@@ -142,10 +143,10 @@
             margin-bottom: 15px;
             padding-left: 27px;
             position: relative;
-            color: #eeeeee;
+            color: var(--blackColor);
 
             i {
-                color: var(--primaryColor);
+                color: var(--blackColor);
                 position: absolute;
                 margin-top: 1px;
                 font-size: 18px;
@@ -154,10 +155,10 @@
             }
             a {
                 display: inline-block;
-                color: #eeeeee;
+                color: var(--blackColor);
 
                 &:hover {
-                    color: var(--primaryColor);
+                    color: var(--whiteColor);
                 }
             }
             &:last-child {

@@ -14,10 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeDemoOneComponent } from './components/pages/home-demo-one/home-demo-one.component';
-import { HomeDemoTwoComponent } from './components/pages/home-demo-two/home-demo-two.component';
-import { HomeDemoThreeComponent } from './components/pages/home-demo-three/home-demo-three.component';
-import { HomeDemoFourComponent } from './components/pages/home-demo-four/home-demo-four.component';
+import { HomeComponent } from './components/pages/home/home.component';
 import { FooterComponent } from './components/common/footer/footer.component';
 import { SubscribeComponent } from './components/common/subscribe/subscribe.component';
 import { NotFoundComponent } from './components/common/not-found/not-found.component';
@@ -32,18 +29,12 @@ import { ServicesComponent } from './components/common/services/services.compone
 import { QuotesComponent } from './components/common/quotes/quotes.component';
 import { FeaturesComponent } from './components/common/features/features.component';
 import { PartnerComponent } from './components/common/partner/partner.component';
-import { HomeoneBannerComponent } from './components/pages/home-demo-one/homeone-banner/homeone-banner.component';
+import { HomeoneBannerComponent } from './components/pages/home/home-banner/home-banner.component';
 import { LetsTalkComponent } from './components/common/lets-talk/lets-talk.component';
-import { ExpertiseComponent } from './components/common/expertise/expertise.component';
-import { HometwoBannerComponent } from './components/pages/home-demo-two/hometwo-banner/hometwo-banner.component';
-import { HomethreeBannerComponent } from './components/pages/home-demo-three/homethree-banner/homethree-banner.component';
+import { WhyUsComponent } from './components/common/why-us/why-us.component';
 import { AboutComponent } from './components/common/about/about.component';
-import { TeamComponent } from './components/common/team/team.component';
-import { HomefourBannerComponent } from './components/pages/home-demo-four/homefour-banner/homefour-banner.component';
+import { ValuesComponent } from './components/common/values/values.component';
 import { ServicesPageOneComponent } from './components/pages/services-page-one/services-page-one.component';
-import { ServicesPageTwoComponent } from './components/pages/services-page-two/services-page-two.component';
-import { ServicesPageThreeComponent } from './components/pages/services-page-three/services-page-three.component';
-import { ServicesPageFourComponent } from './components/pages/services-page-four/services-page-four.component';
 import { ServiceDetailsPageComponent } from './components/pages/service-details-page/service-details-page.component';
 import { PortfolioPageOneComponent } from './components/pages/portfolio-page-one/portfolio-page-one.component';
 import { PortfolioPageTwoComponent } from './components/pages/portfolio-page-two/portfolio-page-two.component';
@@ -57,21 +48,18 @@ import { TermsConditionsPageComponent } from './components/pages/terms-condition
 import { ProfileAuthenticationPageComponent } from './components/pages/profile-authentication-page/profile-authentication-page.component';
 import { ForgotPasswordPageComponent } from './components/pages/forgot-password-page/forgot-password-page.component';
 import { ClientsFeedbackPageComponent } from './components/pages/clients-feedback-page/clients-feedback-page.component';
-import { PricingPageComponent } from './components/pages/pricing-page/pricing-page.component';
 import { TeamPageComponent } from './components/pages/team-page/team-page.component';
 import { AboutPageComponent } from './components/pages/about-page/about-page.component';
 import { BlogGridPageComponent } from './components/pages/blog-grid-page/blog-grid-page.component';
 import { BlogDetailsPageComponent } from './components/pages/blog-details-page/blog-details-page.component';
 import { BlogRightSidebarPageComponent } from './components/pages/blog-right-sidebar-page/blog-right-sidebar-page.component';
 import { WidgetSidebarComponent } from './components/common/widget-sidebar/widget-sidebar.component';
+import {WhatsNextomponent} from "./components/common/whats-next/whats-next.component";
 
 @NgModule({
     declarations: [
         AppComponent,
-        HomeDemoOneComponent,
-        HomeDemoTwoComponent,
-        HomeDemoThreeComponent,
-        HomeDemoFourComponent,
+        HomeComponent,
         FooterComponent,
         SubscribeComponent,
         NotFoundComponent,
@@ -88,16 +76,11 @@ import { WidgetSidebarComponent } from './components/common/widget-sidebar/widge
         PartnerComponent,
         HomeoneBannerComponent,
         LetsTalkComponent,
-        ExpertiseComponent,
-        HometwoBannerComponent,
-        HomethreeBannerComponent,
+        WhyUsComponent,
+        WhatsNextomponent,
         AboutComponent,
-        TeamComponent,
-        HomefourBannerComponent,
+        ValuesComponent,
         ServicesPageOneComponent,
-        ServicesPageTwoComponent,
-        ServicesPageThreeComponent,
-        ServicesPageFourComponent,
         ServiceDetailsPageComponent,
         PortfolioPageOneComponent,
         PortfolioPageTwoComponent,
@@ -111,7 +94,6 @@ import { WidgetSidebarComponent } from './components/common/widget-sidebar/widge
         ProfileAuthenticationPageComponent,
         ForgotPasswordPageComponent,
         ClientsFeedbackPageComponent,
-        PricingPageComponent,
         TeamPageComponent,
         AboutPageComponent,
         BlogGridPageComponent,
@@ -133,7 +115,7 @@ import { WidgetSidebarComponent } from './components/common/widget-sidebar/widge
         FormsModule,
         HttpClientModule,
         ReactiveFormsModule,
-        BsDropdownModule.forRoot()
+        BsDropdownModule.forRoot(),
     ],
     providers: [],
     bootstrap: [AppComponent]

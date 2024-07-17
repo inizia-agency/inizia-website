@@ -1,129 +1,16 @@
-<!-- Default Partner Section -->
 <div
-    class="partner-area bg-black"
+    class="partner-area bg-beige partner-border"
     [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3'}"
 >
-    <div class="container-fluid">
-        <div class="row justify-content-center align-items-center">
-            <div class="col">
-                <div class="partner-item mb-25 text-center">
-                    <img src="assets/images/partner/partner1.png" alt="partner-image">
-                </div>
+    <div class="carousel-container">
+        <div class="carousel-track">
+            <div class="carousel-slide" *ngFor="let partner of partners">
+                <img [src]="partner.img" [alt]="partner.alt" class="partner-image">
             </div>
-            <div class="col">
-                <div class="partner-item mb-25 text-center">
-                    <img src="assets/images/partner/partner2.png" alt="partner-image">
-                </div>
-            </div>
-            <div class="col">
-                <div class="partner-item mb-25 text-center">
-                    <img src="assets/images/partner/partner3.png" alt="partner-image">
-                </div>
-            </div>
-            <div class="col">
-                <div class="partner-item mb-25 text-center">
-                    <img src="assets/images/partner/partner4.png" alt="partner-image">
-                </div>
-            </div>
-            <div class="col">
-                <div class="partner-item mb-25 text-center">
-                    <img src="assets/images/partner/partner5.png" alt="partner-image">
-                </div>
-            </div>
-            <div class="col">
-                <div class="partner-item mb-25 text-center">
-                    <img src="assets/images/partner/partner6.png" alt="partner-image">
-                </div>
-            </div>
-            <div class="col">
-                <div class="partner-item mb-25 text-center">
-                    <img src="assets/images/partner/partner7.png" alt="partner-image">
-                </div>
+            <div class="carousel-slide" *ngFor="let partner of partners">
+                <img [src]="partner.img" [alt]="partner.alt" class="partner-image">
             </div>
         </div>
     </div>
-</div>
 
-<!-- Partner Section Home Demo - 2 -->
-<div
-    class="partner-area style-two dotted-bg bg-fbecd7 d-none"
-    [ngClass]="{'d-block': router.url === '/index-2'}"
->
-    <div class="container-fluid">
-        <div class="row justify-content-center align-items-center">
-            <div class="col">
-                <div class="partner-item mb-25 text-center">
-                    <img src="assets/images/partner/partner8.png" alt="partner-image">
-                </div>
-            </div>
-            <div class="col">
-                <div class="partner-item mb-25 text-center">
-                    <img src="assets/images/partner/partner9.png" alt="partner-image">
-                </div>
-            </div>
-            <div class="col">
-                <div class="partner-item mb-25 text-center">
-                    <img src="assets/images/partner/partner10.png" alt="partner-image">
-                </div>
-            </div>
-            <div class="col">
-                <div class="partner-item mb-25 text-center">
-                    <img src="assets/images/partner/partner11.png" alt="partner-image">
-                </div>
-            </div>
-            <div class="col">
-                <div class="partner-item mb-25 text-center">
-                    <img src="assets/images/partner/partner12.png" alt="partner-image">
-                </div>
-            </div>
-            <div class="col">
-                <div class="partner-item mb-25 text-center">
-                    <img src="assets/images/partner/partner13.png" alt="partner-image">
-                </div>
-            </div>
-            <div class="col">
-                <div class="partner-item mb-25 text-center">
-                    <img src="assets/images/partner/partner14.png" alt="partner-image">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Partner Section Home Demo - 3 -->
-<div
-    class="partner-area pt-0 pb-0 dotted-bg d-none"
-    [ngClass]="{'d-block': router.url === '/index-3'}"
->
-    <div class="container">
-        <div class="partner-inner-box bg-black">
-            <div class="row justify-content-center align-items-center">
-                <div class="col">
-                    <div class="partner-item mb-25 text-center">
-                        <img src="assets/images/partner/partner2.png" alt="partner-image">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="partner-item mb-25 text-center">
-                        <img src="assets/images/partner/partner3.png" alt="partner-image">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="partner-item mb-25 text-center">
-                        <img src="assets/images/partner/partner4.png" alt="partner-image">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="partner-item mb-25 text-center">
-                        <img src="assets/images/partner/partner5.png" alt="partner-image">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="partner-item mb-25 text-center">
-                        <img src="assets/images/partner/partner6.png" alt="partner-image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>

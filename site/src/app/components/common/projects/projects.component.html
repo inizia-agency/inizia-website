@@ -1,68 +1,12 @@
-<!-- Default Projects Section -->
 <div
-    class="projects-area ptb-100 dotted-bg"
+    class="projects-area ptb-100 dotted-bg d-none"
     [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3' || router.url === '/index-4'}"
 >
     <div class="container">
         <div class="section-title">
             <span class="sub-title">RECENT PROJECTS</span>
             <h2>We are your one-stop solutions for building brands</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Rutrum pretium pulvinar ut nec. Ac consequat blandit gravida turpis a risus pharetra amet molestie eget porta.</p>
-        </div>
-        <div class="row justify-content-center extra-margin">
-            <div class="project-big-box">
-                <div class="single-project-box">
-                    <a routerLink="/project-details" class="image d-block">
-                        <img src="assets/images/projects/project1.jpg" alt="project-image">
-                    </a>
-                    <h4><a routerLink="/project-details">Digital Marketing</a></h4>
-                    <a routerLink="/project-details" class="link-btn"><i class="flaticon-right-up"></i></a>
-                </div>
-            </div>
-            <div class="project-small-box">
-                <div class="single-project-box">
-                    <a routerLink="/project-details" class="image d-block">
-                        <img src="assets/images/projects/project2.jpg" alt="project-image">
-                    </a>
-                    <h4><a routerLink="/project-details">Product Engineering</a></h4>
-                    <a routerLink="/project-details" class="link-btn"><i class="flaticon-right-up"></i></a>
-                </div>
-            </div>
-            <div class="project-small-box">
-                <div class="single-project-box">
-                    <a routerLink="/project-details" class="image d-block">
-                        <img src="assets/images/projects/project3.jpg" alt="project-image">
-                    </a>
-                    <h4><a routerLink="/project-details">Company Branding</a></h4>
-                    <a routerLink="/project-details" class="link-btn"><i class="flaticon-right-up"></i></a>
-                </div>
-            </div>
-            <div class="project-big-box">
-                <div class="single-project-box">
-                    <a routerLink="/project-details" class="image d-block">
-                        <img src="assets/images/projects/project4.jpg" alt="project-image">
-                    </a>
-                    <h4><a routerLink="/project-details">Illustrations</a></h4>
-                    <a routerLink="/project-details" class="link-btn"><i class="flaticon-right-up"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="view-all-btn text-center mt-0">
-            <a routerLink="/projects" class="default-btn">View All Projects <i class="flaticon-right-up"></i></a>
-        </div>
-    </div>
-</div>
-
-<!-- Projects Section for Home Demo - 2 -->
-<div
-    class="projects-area ptb-100 dotted-bg d-none"
-    [ngClass]="{'d-block': router.url === '/index-2'}"
->
-    <div class="container">
-        <div class="section-title">
-            <span class="sub-title">RECENT PROJECTS</span>
-            <h2>We are your one-stop solutions for building brands</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Rutrum pretium pulvinar ut nec. Ac consequat blandit gravida turpis a risus pharetra amet molestie eget porta.</p>
+            <p>See some of the projects we have worked on. Ranging from mobile applications to websites. Including from planning, to design, development and SEO.</p>
         </div>
     </div>
     <div class="container-fluid">
@@ -71,10 +15,10 @@
                 <ng-template carouselSlide>
                     <div class="single-project-item mb-25">
                         <a routerLink="/project-details" class="d-block image">
-                            <img src="assets/images/projects/project5.jpg" alt="project-image">
+                            <img src="assets/images/projects/design.jpg" alt="project-image">
                         </a>
                         <div class="content">
-                            <h4><a routerLink="/project-details">Digital Marketing</a></h4>
+                            <h6><a routerLink="/project-details">Website Development</a></h6>
                             <a routerLink="/project-details" class="link-btn"><i class="flaticon-right-up"></i></a>
                         </div>
                     </div>
@@ -82,10 +26,10 @@
                 <ng-template carouselSlide>
                     <div class="single-project-item mb-25">
                         <a routerLink="/project-details" class="d-block image">
-                            <img src="assets/images/projects/project6.jpg" alt="project-image">
+                            <img src="assets/images/projects/dev.jpg" alt="project-image">
                         </a>
                         <div class="content">
-                            <h4><a routerLink="/project-details">Product Engineering</a></h4>
+                            <h6><a routerLink="/project-details">Custom Software</a></h6>
                             <a routerLink="/project-details" class="link-btn"><i class="flaticon-right-up"></i></a>
                         </div>
                     </div>
@@ -93,10 +37,10 @@
                 <ng-template carouselSlide>
                     <div class="single-project-item mb-25">
                         <a routerLink="/project-details" class="d-block image">
-                            <img src="assets/images/projects/project7.jpg" alt="project-image">
+                            <img src="assets/images/projects/seo.jpg" alt="project-image">
                         </a>
                         <div class="content">
-                            <h4><a routerLink="/project-details">Company Branding</a></h4>
+                            <h6><a routerLink="/project-details">SEO</a></h6>
                             <a routerLink="/project-details" class="link-btn"><i class="flaticon-right-up"></i></a>
                         </div>
                     </div>
@@ -104,21 +48,10 @@
                 <ng-template carouselSlide>
                     <div class="single-project-item mb-25">
                         <a routerLink="/project-details" class="d-block image">
-                            <img src="assets/images/projects/project8.jpg" alt="project-image">
+                            <img src="../../../../assets/images/projects/uiux.jpg" alt="project-image">
                         </a>
                         <div class="content">
-                            <h4><a routerLink="/project-details">Illustrations</a></h4>
-                            <a routerLink="/project-details" class="link-btn"><i class="flaticon-right-up"></i></a>
-                        </div>
-                    </div>
-                </ng-template>
-                <ng-template carouselSlide>
-                    <div class="single-project-item mb-25">
-                        <a routerLink="/project-details" class="d-block image">
-                            <img src="assets/images/projects/project6.jpg" alt="project-image">
-                        </a>
-                        <div class="content">
-                            <h4><a routerLink="/project-details">Product Engineering</a></h4>
+                            <h6><a routerLink="/project-details">UI/UX Design</a></h6>
                             <a routerLink="/project-details" class="link-btn"><i class="flaticon-right-up"></i></a>
                         </div>
                     </div>
@@ -126,110 +59,5 @@
             </owl-carousel-o>
         </div>
     </div>
-</div>
+<!--</div>-->
 
-<!-- Projects Section for Home Demo - 3 -->
-<div
-    class="projects-area ptb-100 dotted-bg d-none"
-    [ngClass]="{'d-block': router.url === '/index-3'}"
->
-    <div class="container">
-        <div class="section-title">
-            <span class="sub-title main-color">RECENT PROJECTS</span>
-            <h2>We are your one-stop solutions for building brands</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Rutrum pretium pulvinar ut nec. Ac consequat blandit gravida turpis a risus pharetra amet molestie eget porta.</p>
-        </div>
-        <div class="row justify-content-center extra-margin">
-            <div class="project-small-box">
-                <div class="single-project-box">
-                    <a routerLink="/project-details" class="image d-block">
-                        <img src="assets/images/projects/project10.jpg" alt="project-image">
-                    </a>
-                    <h4><a routerLink="/project-details">Business Card</a></h4>
-                    <a routerLink="/project-details" class="link-btn"><i class="flaticon-right-up"></i></a>
-                </div>
-            </div>
-            <div class="project-big-box">
-                <div class="single-project-box">
-                    <a routerLink="/project-details" class="image d-block">
-                        <img src="assets/images/projects/project9.jpg" alt="project-image">
-                    </a>
-                    <h4><a routerLink="/project-details">Digital Marketing</a></h4>
-                    <a routerLink="/project-details" class="link-btn"><i class="flaticon-right-up"></i></a>
-                </div>
-            </div>
-            <div class="project-big-box">
-                <div class="single-project-box">
-                    <a routerLink="/project-details" class="image d-block">
-                        <img src="assets/images/projects/project11.jpg" alt="project-image">
-                    </a>
-                    <h4><a routerLink="/project-details">Product Engineering</a></h4>
-                    <a routerLink="/project-details" class="link-btn"><i class="flaticon-right-up"></i></a>
-                </div>
-            </div>
-            <div class="project-small-box">
-                <div class="single-project-box">
-                    <a routerLink="/project-details" class="image d-block">
-                        <img src="assets/images/projects/project12.jpg" alt="project-image">
-                    </a>
-                    <h4><a routerLink="/project-details">Illustrator Graphics</a></h4>
-                    <a routerLink="/project-details" class="link-btn"><i class="flaticon-right-up"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="view-all-btn text-center mt-0">
-            <a routerLink="/projects" class="default-btn">View All Projects <i class="flaticon-right-up"></i></a>
-        </div>
-    </div>
-</div>
-
-<!-- Projects Section for Home Demo - 4 -->
-<div
-    class="projects-area pt-100 pb-75 dotted-bg d-none"
-    [ngClass]="{'d-block': router.url === '/index-4'}"
->
-    <div class="container">
-        <div class="section-title">
-            <h2>We are your one-stop solutions for building brands</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Rutrum pretium pulvinar ut nec. Ac consequat blandit gravida turpis a risus pharetra amet molestie eget porta.</p>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-6">
-                <div class="single-project-box mb-25">
-                    <a routerLink="/project-details" class="image d-block">
-                        <img src="assets/images/projects/project9.jpg" alt="project-image">
-                    </a>
-                    <h4><a routerLink="/project-details">Digital Marketing</a></h4>
-                    <a routerLink="/project-details" class="link-btn"><i class="flaticon-right-up"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div class="single-project-box mb-25">
-                    <a routerLink="/project-details" class="image d-block">
-                        <img src="assets/images/projects/project12.jpg" alt="project-image">
-                    </a>
-                    <h4><a routerLink="/project-details">Illustrator Graphics</a></h4>
-                    <a routerLink="/project-details" class="link-btn"><i class="flaticon-right-up"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div class="single-project-box mb-25">
-                    <a routerLink="/project-details" class="image d-block">
-                        <img src="assets/images/projects/project1.jpg" alt="project-image">
-                    </a>
-                    <h4><a routerLink="/project-details">Company Branding</a></h4>
-                    <a routerLink="/project-details" class="link-btn"><i class="flaticon-right-up"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div class="single-project-box mb-25">
-                    <a routerLink="/project-details" class="image d-block">
-                        <img src="assets/images/projects/project4.jpg" alt="project-image">
-                    </a>
-                    <h4><a routerLink="/project-details">Product Engineering</a></h4>
-                    <a routerLink="/project-details" class="link-btn"><i class="flaticon-right-up"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>

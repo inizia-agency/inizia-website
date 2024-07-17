@@ -1,4 +1,6 @@
 .projects-area {
+    border-top: 1px solid var(--blackColor);
+    border-bottom: 1px solid var(--blackColor);
     .row {
         &.extra-margin {
             margin: {
@@ -30,7 +32,7 @@
     position: relative;
     margin-bottom: 50px;
     padding-bottom: 7px;
-    
+
     .image {
         overflow: hidden;
         border-radius: 7px;
@@ -59,7 +61,7 @@
         text-align: center;
         border-radius: 50%;
         color: var(--whiteColor);
-        background-color: var(--blackColor);
+        background-color: var(--thirdColor);
 
         i {
             left: 0;
@@ -104,7 +106,7 @@
         position: relative;
         color: var(--whiteColor);
         padding: 20px 80px 20px 25px;
-        background-color: var(--blackColor);
+        background-color: var(--thirdColor);
 
         h4 {
             color: var(--whiteColor);
@@ -131,7 +133,7 @@
             color: var(--blackColor);
             transform: translateY(-50%);
             background-color: rgba(255, 255, 255, 0.55);
-    
+
             i {
                 left: 0;
                 right: 0;
@@ -145,7 +147,7 @@
             }
             &:hover {
                 background-color: var(--primaryColor);
-    
+
                 i {
                     transform: translateY(-50%) rotate(45deg);
                     color: var(--whiteColor);
@@ -198,7 +200,7 @@
     .single-project-box {
         margin-bottom: 25px;
         padding-bottom: 7px;
-        
+
         .image {
             border-radius: 5px;
             margin-bottom: 20px;
@@ -223,17 +225,17 @@
     }
     .single-project-item {
         border-radius: 5px 50px 0 0;
-    
+
         .image {
             border-radius: 5px 50px 0 0;
-    
+
             img {
                 border-radius: 5px 50px 0 0;
             }
         }
         .content {
             padding: 20px 60px 20px 15px;
-    
+
             h4 {
                 font-size: 17px;
             }
@@ -292,7 +294,7 @@
     .single-project-box {
         margin-bottom: 35px;
         padding-bottom: 5px;
-        
+
         h4 {
             font-size: 19px;
             padding: {
@@ -310,7 +312,7 @@
     .single-project-item {
         .content {
             padding: 20px 65px 20px 20px;
-    
+
             h4 {
                 font-size: 19px;
             }
@@ -349,7 +351,7 @@
     }
     .single-project-box {
         margin-bottom: 40px;
-        
+
         h4 {
             font-size: 21px;
         }
@@ -357,7 +359,7 @@
     .single-project-item {
         .content {
             padding: 20px 60px 20px 15px;
-    
+
             h4 {
                 font-size: 20px;
             }

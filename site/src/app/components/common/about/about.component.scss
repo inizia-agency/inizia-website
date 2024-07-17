@@ -6,7 +6,7 @@
         color: var(--secondaryColor);
 
         &.main-color {
-            color: var(--primaryColor);
+            color: var(--secondaryColor);
         }
     }
     h2 {
@@ -79,7 +79,7 @@
         position: absolute;
         transition: var(--transition);
         border-radius: 7px 115px 7px 7px;
-        background-color: var(--blackColor);
+        background-color: var(--primaryColor);
         margin: {
             right: 10px;
             bottom: 10px;
@@ -87,7 +87,7 @@
     }
     &:hover {
         &::before {
-            background-color: var(--primaryColor);
+            background-color: var(--thirdColor);
         }
     }
 }
