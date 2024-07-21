@@ -55,6 +55,7 @@ import { BlogDetailsPageComponent } from './components/pages/blog-details-page/b
 import { BlogRightSidebarPageComponent } from './components/pages/blog-right-sidebar-page/blog-right-sidebar-page.component';
 import { WidgetSidebarComponent } from './components/common/widget-sidebar/widget-sidebar.component';
 import {WhatsNextomponent} from "./components/common/whats-next/whats-next.component";
+import {WorkProcessComponent} from "./components/common/work-process/work-process.component";
 
 @NgModule({
     declarations: [
@@ -99,7 +100,8 @@ import {WhatsNextomponent} from "./components/common/whats-next/whats-next.compo
         BlogGridPageComponent,
         BlogDetailsPageComponent,
         BlogRightSidebarPageComponent,
-        WidgetSidebarComponent
+        WidgetSidebarComponent,
+        WorkProcessComponent,
     ],
     imports: [
         BrowserModule,
