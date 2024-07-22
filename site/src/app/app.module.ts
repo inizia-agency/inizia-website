@@ -36,11 +36,9 @@ import { AboutComponent } from './components/common/about/about.component';
 import { ValuesComponent } from './components/common/values/values.component';
 import { ServicesPageOneComponent } from './components/pages/services-page-one/services-page-one.component';
 import { ServiceDetailsPageComponent } from './components/pages/service-details-page/service-details-page.component';
-import { PortfolioPageOneComponent } from './components/pages/portfolio-page-one/portfolio-page-one.component';
-import { PortfolioPageTwoComponent } from './components/pages/portfolio-page-two/portfolio-page-two.component';
-import { PortfolioPageThreeComponent } from './components/pages/portfolio-page-three/portfolio-page-three.component';
+import { PortfolioPageComponent } from './components/pages/portfolio-page/portfolio-page.component';
 import { PortfolioDetailsPageComponent } from './components/pages/portfolio-details-page/portfolio-details-page.component';
-import { ContactPageComponent } from './components/pages/contact-page/contact-page.component';
+import {ContactPageComponent} from './components/pages/contact-page/contact-page.component';
 import { FaqComponent } from './components/common/faq/faq.component';
 import { FaqPageComponent } from './components/pages/faq-page/faq-page.component';
 import { PrivacyPolicyPageComponent } from './components/pages/privacy-policy-page/privacy-policy-page.component';
@@ -56,6 +54,7 @@ import { BlogRightSidebarPageComponent } from './components/pages/blog-right-sid
 import { WidgetSidebarComponent } from './components/common/widget-sidebar/widget-sidebar.component';
 import {WhatsNextomponent} from "./components/common/whats-next/whats-next.component";
 import {WorkProcessComponent} from "./components/common/work-process/work-process.component";
+import {BusinessCardComponent} from "./components/pages/business-card/business-card.component";
 
 @NgModule({
     declarations: [
@@ -66,6 +65,8 @@ import {WorkProcessComponent} from "./components/common/work-process/work-proces
         NotFoundComponent,
         HeaderComponent,
         BlogComponent,
+        BusinessCardComponent,
+        ContactPageComponent,
         PricingComponent,
         ProjectsComponent,
         WhyChooseUsComponent,
@@ -83,11 +84,8 @@ import {WorkProcessComponent} from "./components/common/work-process/work-proces
         ValuesComponent,
         ServicesPageOneComponent,
         ServiceDetailsPageComponent,
-        PortfolioPageOneComponent,
-        PortfolioPageTwoComponent,
-        PortfolioPageThreeComponent,
+        PortfolioPageComponent,
         PortfolioDetailsPageComponent,
-        ContactPageComponent,
         FaqComponent,
         FaqPageComponent,
         PrivacyPolicyPageComponent,

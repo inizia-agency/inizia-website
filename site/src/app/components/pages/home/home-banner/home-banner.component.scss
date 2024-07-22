@@ -103,7 +103,12 @@
             right: 0;
         }
     }
-
+    .shape1{
+        display: none;
+    }
+    .shape2 {
+        display: none;
+    }
 }
 
 /* Min width 576px to Max width 767px */
@@ -112,6 +117,19 @@
     .main-banner-area {
         .container-fluid {
             max-width: 540px;
+        }
+    }
+    .main-banner-image {
+        position: relative;
+
+        &.one {
+            max-width: 100%;
+            left: 0;
+        }
+        &.two {
+            margin-top: 40px;
+            max-width: 100%;
+            right: 0;
         }
     }
 

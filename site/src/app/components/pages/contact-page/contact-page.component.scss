@@ -1,5 +1,5 @@
 .contact-inner-box {
-    background-color: var(--blackColor);
+    background-color: var(--secondaryColor);
     border-radius: 7px;
 
     .contact-info {
@@ -65,7 +65,7 @@
                             text-align: center;
                             color: var(--whiteColor);
                             background-color: rgba(255, 255, 255, .14);
-            
+
                             i {
                                 left: 0;
                                 right: 0;
@@ -89,7 +89,7 @@
         }
     }
     .contact-form {
-        background-color: var(--whiteColor);
+        //background-color: var(--whiteColor);
         padding: 70px 100px;
         border-radius: 7px;
 
@@ -155,22 +155,22 @@
 
     .contact-inner-box {
         border-radius: 5px;
-    
+
         .contact-info {
             height: auto;
             padding: 35px 20px;
-    
+
             .info {
                 li {
                     margin-bottom: 25px;
-    
+
                     h4 {
                         margin-bottom: 12px;
                         font-size: 17px;
                     }
                     span {
                         padding-left: 22px;
-    
+
                         i {
                             font-size: 15px;
                         }
@@ -181,7 +181,7 @@
         .contact-form {
             padding: 35px 20px;
             border-radius: 5px;
-    
+
             h4 {
                 font-size: 17px;
                 margin-bottom: 25px;
@@ -189,7 +189,7 @@
             form {
                 .form-group {
                     margin-bottom: 20px;
-    
+
                     .form-control {
                         font-size: 14px;
                         height: 48px;
@@ -227,23 +227,23 @@
 @media only screen and (min-width : 768px) and (max-width : 991px) {
 
     .contact-inner-box {
-        background-color: var(--blackColor);
+        background-color: var(--secondaryColor);
         border-radius: 7px;
-    
+
         .contact-info {
             height: auto;
             padding: 70px;
-    
+
             .info {
                 li {
                     margin-bottom: 30px;
-    
+
                     h4 {
                         font-size: 19px;
                     }
                     span {
                         padding-left: 25px;
-    
+
                         i {
                             font-size: 16px;
                         }
@@ -253,7 +253,7 @@
         }
         .contact-form {
             padding: 70px;
-    
+
             h4 {
                 font-size: 19px;
                 margin-bottom: 25px;
@@ -261,7 +261,7 @@
             form {
                 .form-group {
                     margin-bottom: 20px;
-    
+
                     .form-control {
                         font-size: 14px;
                         height: 52px;
@@ -287,17 +287,17 @@
     .contact-inner-box {
         .contact-info {
             padding: 60px 40px;
-    
+
             .info {
                 li {
                     margin-bottom: 40px;
-    
+
                     h4 {
                         font-size: 21px;
                     }
                     span {
                         padding-left: 25px;
-    
+
                         i {
                             font-size: 16px;
                         }
@@ -307,7 +307,7 @@
         }
         .contact-form {
             padding: 60px;
-    
+
             h4 {
                 font-size: 21px;
             }

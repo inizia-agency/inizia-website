@@ -34,85 +34,9 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a routerLink="/projects" href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            <a routerLink="/projects" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                                 Portfolio
                             </a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/project-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                        Portfolio Details
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
-                                Pages
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a routerLink="/about" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                        About Us
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                        Team
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/pricing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                        Pricing
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/clients-feedback" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                        Client's Feedback
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/faq" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                        FAQ
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="javascript:void(0)" class="dropdown-toggle nav-link">
-                                        My Account
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                                Login
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                                Register
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a routerLink="/forgot-password" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                                Forgot Password
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/privacy-policy" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                        Privacy Policy
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/terms-conditions" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                        Terms & Conditions
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a routerLink="/not-found" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                        404 Error Page
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
                         <li class="nav-item">
                             <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
