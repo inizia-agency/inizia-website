@@ -1,0 +1,8 @@
+# Redirects from what the browser requests to what we serve
+/home                /
+/about               /about
+/services            /services
+/projects            /projects
+/project-details/:id     /project-details/:id
+/contact             /contact
+
