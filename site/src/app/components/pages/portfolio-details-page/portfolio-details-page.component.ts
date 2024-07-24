@@ -17,7 +17,7 @@ export class PortfolioDetailsPageComponent implements OnInit {
             tabs: [
                 {
                     tabTitle: 'Easy Review',
-                    image: 'assets/images/projects/mobile-dev.jpg',
+                    image: 'assets/images/projects/project-2.png',
                     description: 'Easy Review is a web and mobile application currently in development. The app aims to facilitate the process of leaving reviews for hospitality venues, making it easier and more engaging for users. The project is still in development, with a focus on creating an intuitive and user-friendly experience to encourage user engagement.',
                     details: {
                         category: 'Mobile and Web App',
@@ -51,7 +51,7 @@ export class PortfolioDetailsPageComponent implements OnInit {
                 },
                 {
                     tabTitle: 'Artesian Hospitality',
-                    image: 'assets/images/projects/mobile-dev-2.jpg',
+                    image: 'assets/images/projects/project-1.png',
                     description: 'Artesian Hospitality is a mobile app developed to be published in both the App Store and Google Play Store. The app implements a point system rewards program, allowing customers to earn points based on their spending at Artesian venues. These points can then be redeemed for various benefits.',
                     details: {
                         category: 'Mobile App',
@@ -94,7 +94,7 @@ export class PortfolioDetailsPageComponent implements OnInit {
             tabs: [
                 {
                     tabTitle: 'Play The Wilde',
-                    image: 'assets/images/projects/web-dev.jpg',
+                    image: 'assets/images/projects/project-4.png',
                     description: 'Play The Wilde required a website in less than three days to showcase their services and portfolio in the construction industry. The design needed to align with their brand styles and effectively communicate their values.',
                     details: {
                         category: 'Website',
@@ -131,7 +131,7 @@ export class PortfolioDetailsPageComponent implements OnInit {
                 },
                 {
                     tabTitle: 'Apex',
-                    image: 'assets/images/projects/web-dev-2.jpg',
+                    image: 'assets/images/projects/project-5.png',
                     description: 'Apex needed a website to showcase their services, portfolio, and story. Without any existing branding, they wanted a design that reflected their industry in childcare playgrounds.',
                     details: {
                         category: 'Website',
@@ -169,50 +169,13 @@ export class PortfolioDetailsPageComponent implements OnInit {
             title: 'UI/UX Design',
             tabs: [
                 {
-                    tabTitle: 'Forest Mobile Application',
-                    image: 'assets/images/projects/ui-ux.jpg',
-                    description: 'The Forest Mobile Application was designed for people visiting the forest in Brisbane to help them spot certain animals. The app required a user-friendly, playful, and engaging interface that still conveyed its educational purpose.',
-                    details: {
-                        category: 'Mobile App Design',
-                        client: 'Forest App',
-                        website: 'https://forestapp.com/',
-                         status: 'Handed over',
-                        socialLinks: [
-                            { platform: 'facebook', url: '#', icon: 'flaticon-facebook-app-symbol' },
-                            { platform: 'twitter', url: '#', icon: 'flaticon-twitter' },
-                            { platform: 'instagram', url: '#', icon: 'flaticon-instagram' },
-                            { platform: 'linkedin', url: '#', icon: 'flaticon-linkedin' }
-                        ],
-                        contact: {
-                            phone: '+61450812952',
-                            email: 'hello@inizia.agency'
-                        }
-                    },
-                    iconSections: [
-                        {
-                            icon: 'flaticon-bars',
-                            title: 'Challenges',
-                            text: 'Designing an interface that balanced playfulness with usability and educational value.'
-                        },
-                        {
-                            icon: 'flaticon-web-optimization',
-                            title: 'Solution',
-                            text: 'Created a clean, intuitive interface with easy navigation and visually appealing elements.'
-                        }
-                    ],
-                    additionalText: [
-                        'The app’s design provided users with an enjoyable and informative experience.',
-                        'The playful design elements were well-received by users.'
-                    ]
-                },
-                {
                     tabTitle: 'Homemade Mobile Application',
-                    image: 'assets/images/projects/ui-ux-2.jpg',
+                    image: 'assets/images/projects/project-3.png',
                     description: 'Homemade is a mobile application designed to connect cooks with people. The app needed an interface that simplified the complex problem of matching cooks with users, ensuring a smooth and intuitive user experience.',
                     details: {
                         category: 'Mobile App Design',
                         client: 'Homemade App',
-                        website: 'https://homemadeapp.com/',
+                        website: '',
                         status: 'Handed over',
                         socialLinks: [
                             { platform: 'facebook', url: '#', icon: 'flaticon-facebook-app-symbol' },
