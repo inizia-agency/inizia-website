@@ -23,6 +23,6 @@ export class BusinessCardComponent {
     }
 
     openLinkedIn() {
-        window.open('https://www.linkedin.com/in/micapiacenza', '_blank');
+        window.open('https://www.linkedin.com/company/inizia-agency', '_blank');
     }
 }

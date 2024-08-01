@@ -26,7 +26,7 @@ const routes: Routes = [
     {path: 'contact', component: ContactPageComponent},
     {path: 'business-card', component: BusinessCardComponent},
 
-    {path: '**', component: NotFoundComponent} // This line will remain down from the whole pages component list
+    {path: '**', component: NotFoundComponent}
 ];
 
 @NgModule({
