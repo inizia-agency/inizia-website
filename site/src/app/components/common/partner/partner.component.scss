@@ -1,7 +1,7 @@
 .partner-area {
     padding: {
-        top: 70px;
-        bottom: 45px;
+        top: 3vh;
+        bottom: 3vh;
     };
     border-top: 1px solid var(--blackColor);
     border-bottom: 1px solid var(--blackColor);
@@ -12,10 +12,10 @@
     .partner-inner-box {
         border-radius: 7px;
         padding: {
-            top: 70px;
+            top: 3vh;
+            bottom: 3vh;
             left: 15px;
             right: 15px;
-            bottom: 45px;
         };
         .col {
             flex: 0 0 auto;
@@ -25,8 +25,8 @@
 
     &.style-two {
         padding: {
-            top: 100px;
-            bottom: 75px;
+            top: 3vh;
+            bottom: 3vh;
         };
         .container-fluid {
             padding: {
@@ -86,8 +86,8 @@
 
     .partner-area {
         padding: {
-            top: 40px;
-            bottom: 15px;
+            top: 3vh;
+            bottom: 3vh;
         };
         border-top: 1px solid var(--blackColor);
         border-bottom: 1px solid var(--blackColor);
@@ -98,8 +98,8 @@
         .partner-inner-box {
             border-radius: 5px;
             padding: {
-                top: 60px;
-                bottom: 35px;
+                top: 3vh;
+                bottom: 3vh;
             };
             .col {
                 flex: 0 0 auto;
@@ -143,8 +143,8 @@
 
     .partner-area {
         padding: {
-            top: 50px;
-            bottom: 25px;
+            top: 3vh;
+            bottom: 3vh;
         };
         .col {
             flex: 0 0 auto;
@@ -152,8 +152,8 @@
         }
         .partner-inner-box {
             padding: {
-                top: 60px;
-                bottom: 35px;
+                top: 3vh;
+                bottom: 3vh;
             };
             .col {
                 width: 25%;
@@ -161,8 +161,8 @@
         }
         &.style-two {
             padding: {
-                top: 80px;
-                bottom: 55px;
+                top: 3vh;
+                bottom: 3vh;
             };
             .container-fluid {
                 max-width: 720px;
@@ -181,8 +181,8 @@
 
     .partner-area {
         padding: {
-            top: 60px;
-            bottom: 35px;
+            top: 3vh;
+            bottom: 3vh;
         };
         &.style-two {
             .container-fluid {
