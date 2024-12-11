@@ -1,0 +1,116 @@
+.step-line {
+    border-top: var(--thirdColor) solid 2px;
+    position: relative;
+    top: 9vh;
+    border-radius: 20px;
+}
+.timeline-step {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    transition: transform 0.3s;
+    cursor: pointer;
+
+    .step-number {
+        background: var(--thirdColor);
+        color: white;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .step-content {
+        h3 {
+            margin: 10px 0;
+            font-size: 1.25em;
+        }
+
+        p {
+            margin: 0;
+            font-size: 0.875em;
+            color: #555;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* Less than 480px */
+@media only screen and (max-width: 479px) {
+    .process-section {
+        border-left: var(--thirdColor) solid 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div.step-line {
+            display: none;
+        }
+
+        .d-flex {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .timeline-step {
+            width: 100%;
+            margin: 10px 0;
+        }
+    }
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .process-section {
+        border-left: var(--thirdColor) solid 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div.step-line {
+            display: none;
+        }
+
+        .d-flex {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .timeline-step {
+            width: 100%;
+            max-width: 500px;
+            margin: 10px 0;
+        }
+    }
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .process-section {
+        border-left: var(--thirdColor) solid 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div.step-line {
+            display: none;
+        }
+
+        .d-flex {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .timeline-step {
+            width: 100%;
+            max-width: 700px;
+            margin: 10px 0;
+        }
+    }
+}

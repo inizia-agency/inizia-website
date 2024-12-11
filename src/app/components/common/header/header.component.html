@@ -1,0 +1,149 @@
+<header
+    class="header-area header-container"
+    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3' || router.url === '/index-4'}"
+>
+    <!-- Navbar -->
+    <div
+        class="navbar-area"
+        [ngClass]="{'sticky': isSticky}"
+    >
+        <div>
+            <nav class="navbar navbar-expand-lg" [class.active]="classApplied">
+                <a class="navbar-brand" routerLink="/">
+                    <img src="assets/inizia_logo-nobg.png" alt="Inizia Logo" style="height: 13vh;">
+                </a>
+                <button class="navbar-toggler" type="button" (click)="toggleSidebarClass()">
+                    <i class="flaticon-menu-2"></i>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a routerLink="/" href="javascript:void(0)" class="nav-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/about" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/services" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                Services
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/projects" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav for-responsive">
+                        <li class="nav-item">
+                            <a routerLink="/"  href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/services" href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Services
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/projects" href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="others-option d-flex align-items-center">
+                        <div >
+                            <a routerLink="/contact" class="second-default-btn">Let’s Talk <i class="flaticon-comment"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Sidebar Modal -->
+<div class="sidebarModal" [class.active]="sidebarClassApplied">
+    <div class="offcanvas-header">
+        <a routerLink="/" class="logo d-inline-block">
+            <h1 class="mobile-logo">A.</h1>
+        </a>
+        <button type="button" class="close-btn" (click)="toggleSidebarClass()">
+            <i class="flaticon-close"></i>
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="offcanvas-navbar">
+            <li class="offcanvas-nav-item">
+                <a class="offcanvas-nav-link" routerLink="/">
+                    Home
+                </a>
+            </li>
+            <li class="offcanvas-nav-item">
+                <a class="offcanvas-nav-link" routerLink="/about">
+                    About Us
+                </a>
+            </li>
+            <li class="offcanvas-nav-item">
+                <a class="offcanvas-nav-link" routerLink="/services">
+                    Services
+                </a>
+            </li>
+            <li class="offcanvas-nav-item">
+                <a class="offcanvas-nav-link" routerLink="/projects">
+                    Portfolio
+                </a>
+            </li>
+            <li class="offcanvas-nav-item">
+                <a class="offcanvas-nav-link" routerLink="/contact">
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+        <div class="offcanvas-contact-info">
+            <h4>Contact Info</h4>
+            <ul class="info">
+                <li>
+                    <i class="bx bx-envelope"></i>
+                    <a href="mailto:hello&#64;inizia.agency">hello&#64;inizia.agency</a>
+                </li>
+                <li>
+                    <i class="bx bx-phone-call"></i>
+                    <a href="tel:+61450812952">+61450812952</a>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                    Gold Coast, Australia.
+                </li>
+            </ul>
+            <ul class="social-links list-unstyled mb-0">
+                <li>
+                    <a href="https://www.instagram.com/inizia.agency" target="_blank"><i class="flaticon-instagram-1"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/inizia-agency" target="_blank"><i class="flaticon-linkedin-1"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="others-option d-flex align-items-center">
+            <div class="option-item">
+                <a routerLink="/contact" class="default-btn">Let’s Talk <i class="flaticon-comment"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

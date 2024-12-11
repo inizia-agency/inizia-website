@@ -1,0 +1,74 @@
+<!-- Default Quotes Section -->
+<div
+    class="quotes-area dotted-bg bg-color bg-fbecd7"
+    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3' || router.url === '/about'}"
+>
+    <div class="container">
+        <div class="quotes-inner-box dotted-bg bg-f4d9d3">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-12">
+                    <div class="quotes-image">
+                        <img src="assets/images/ceo.jpg" alt="quotes-image">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="quotes-content">
+                        <i class="flaticon-quotes"></i>
+                        <p>As a midsize software development company, we combine the best of both worlds. We have the focus and speed of the small IT outsourcing companies along with the scalability and expertise of the big ones.</p>
+                        <h6>John Doe<span>, CEO at Envato</span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quotes Section for Home Demo - 2 -->
+<div
+    class="quotes-area dotted-bg bg-color bg-fbecd7 d-none"
+    [ngClass]="{'d-block': router.url === '/index-2'}"
+>
+    <div class="container">
+        <div class="quotes-inner-box dotted-bg bg-f7ffe2">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-12">
+                    <div class="quotes-image">
+                        <img src="assets/images/ceo.jpg" alt="quotes-image">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="quotes-content">
+                        <i class="flaticon-quotes"></i>
+                        <p>As a midsize software development company, we combine the best of both worlds. We have the focus and speed of the small IT outsourcing companies along with the scalability and expertise of the big ones.</p>
+                        <h6>John Doe<span>, CEO at Envato</span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quotes Section for Home Demo - 3 -->
+<div
+    class="quotes-area dotted-bg d-none"
+    [ngClass]="{'d-block': router.url === '/index-3' || router.url === '/about'}"
+>
+    <div class="container">
+        <div class="quotes-inner-box dotted-bg bg-f4d9d3">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-12">
+                    <div class="quotes-image">
+                        <img src="assets/images/ceo.jpg" alt="quotes-image">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="quotes-content">
+                        <i class="flaticon-quotes"></i>
+                        <p>As a midsize software development company, we combine the best of both worlds. We have the focus and speed of the small IT outsourcing companies along with the scalability and expertise of the big ones.</p>
+                        <h6 class="main-color">John Doe<span>, CEO at Envato</span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

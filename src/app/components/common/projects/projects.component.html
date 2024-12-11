@@ -1,0 +1,62 @@
+<div
+    class="projects-area ptb-100 dotted-bg d-none"
+    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3' || router.url === '/index-4'}"
+>
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">RECENT PROJECTS</span>
+            <h2>See what we have been working on</h2>
+            <p>See some of the projects we have worked on. Ranging from mobile applications to websites. Including from planning, to design, development and SEO.</p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="projects-slider">
+            <owl-carousel-o [options]="projectsSlides">
+                <ng-template carouselSlide>
+                    <div class="single-project-item mb-25">
+                        <a routerLink="/projects" class="d-block image">
+                            <img src="assets/images/projects/design.jpg" alt="project-image">
+                        </a>
+                        <div class="content">
+                            <h6><a routerLink="/projects">Website Development</a></h6>
+                            <a routerLink="/projects" class="link-btn"><i class="flaticon-right-up"></i></a>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-project-item mb-25">
+                        <a routerLink="/projects" class="d-block image">
+                            <img src="assets/images/projects/dev.jpg" alt="project-image">
+                        </a>
+                        <div class="content">
+                            <h6><a routerLink="/projects">Mobile App Development</a></h6>
+                            <a routerLink="/projects" class="link-btn"><i class="flaticon-right-up"></i></a>
+                        </div>
+                    </div>
+                </ng-template>
+<!--                <ng-template carouselSlide>-->
+<!--                    <div class="single-project-item mb-25">-->
+<!--                        <a routerLink="/projects" class="d-block image">-->
+<!--                            <img src="assets/images/projects/seo.jpg" alt="project-image">-->
+<!--                        </a>-->
+<!--                        <div class="content">-->
+<!--                            <h6><a routerLink="/projects">SEO</a></h6>-->
+<!--                            <a routerLink="/projects" class="link-btn"><i class="flaticon-right-up"></i></a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </ng-template>-->
+                <ng-template carouselSlide>
+                    <div class="single-project-item mb-25">
+                        <a routerLink="/projects" class="d-block image">
+                            <img src="../../../../assets/images/projects/uiux.jpg" alt="project-image">
+                        </a>
+                        <div class="content">
+                            <h6><a routerLink="/projects">UI/UX Design</a></h6>
+                            <a routerLink="/projects" class="link-btn"><i class="flaticon-right-up"></i></a>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
