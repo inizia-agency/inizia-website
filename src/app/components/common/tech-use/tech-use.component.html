@@ -1,0 +1,20 @@
+<div
+    class="partner-area bg-light-white partner-border"
+    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3'}"
+>
+    <div class="section-title py-3">
+        <span class="sub-title">THE TOOLS</span>
+        <h2>The tools we use to bring your idea to life</h2>
+    </div>
+    <div class="carousel-container">
+        <div class="carousel-track">
+            <div class="carousel-slide" *ngFor="let partner of partners">
+                <img [src]="partner.img" [alt]="partner.alt" class="partner-image">
+            </div>
+            <div class="carousel-slide" *ngFor="let partner of partners">
+                <img [src]="partner.img" [alt]="partner.alt" class="partner-image">
+            </div>
+        </div>
+    </div>
+
+</div>

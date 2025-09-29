@@ -1,0 +1,90 @@
+<div
+    class="services-area ptb-100 dotted-bg"
+    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-4'}"
+>
+    <div class="container">
+        <div class="section-title">
+            <span
+                class="sub-title"
+                [ngClass]="{'main-color': router.url === '/index-3'}"
+            >
+                OUR SERVICES
+            </span>
+            <h2>Build the Right Product. Faster. Smarter.</h2>
+            <p>We help you avoid wasted time and budget by turning untested ideas into validated products. Our four core services work together in a lean, iterative cycle—from strategy to launch to continuous improvement—so you can move fast, learn fast, and build what truly matters.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="single-service-box mb-25">
+                    <div
+                            class="icon"
+                            [ngClass]="{'main-color': router.url === '/index-3'}"
+                    >
+                        <i class="flaticon-digital-marketing"></i>
+                    </div>
+                    <h4><a routerLink="/services">Idea Validation & Strategy</a></h4>
+                    <h6><a routerLink="/services">From vision to validated roadmap</a></h6>
+                    <p>Got an idea? We turn early-stage concepts into clear, testable hypotheses. Through customer discovery, competitive insights, and lean experiments, we help you define what to build—and why. Validate before you invest.</p>
+                    <a routerLink="/services" class="link-btn">View More <i class="flaticon-right-up"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="single-service-box mb-25">
+                    <div
+                        class="icon"
+                        [ngClass]="{'main-color': router.url === '/index-3'}"
+                    >
+                        <i class="flaticon-web-programming"></i>
+                    </div>
+                    <h4><a routerLink="/services">Software Development</a></h4>
+                    <h6><a routerLink="/services">Web & Mobile Applications</a></h6>
+                    <p>We don’t just write code—we solve problems. From MVPs to scalable platforms, our development process prioritises functionality, performance, and adaptability, helping you launch fast and evolve with confidence.</p>
+                    <a routerLink="/services" class="link-btn">View More <i class="flaticon-right-up"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="single-service-box mb-25">
+                    <div
+                        class="icon"
+                        [ngClass]="{'main-color': router.url === '/index-3'}"
+                    >
+                        <i class="flaticon-ux"></i>
+                    </div>
+                    <h4><a routerLink="/services">UI/UX Design</a></h4>
+                    <h6><a routerLink="/services">User-first interfaces</a></h6>
+                    <p>We design experiences people actually want to use. Every screen, flow, and interaction is crafted to reduce friction, drive engagement, and reflect your brand’s personality—all while staying grounded in user research and testing.</p>
+                    <a routerLink="/services" class="link-btn">View More <i class="flaticon-right-up"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="single-service-box mb-25">
+                    <div
+                        class="icon"
+                        [ngClass]="{'main-color': router.url === '/index-3'}"
+                    >
+                        <i class="flaticon-web-optimization"></i>
+                    </div>
+                    <h4><a routerLink="/services">Maintenance & Growth</a></h4>
+                    <h6><a routerLink="/services">Ongoing support & iteration</a></h6>
+                    <p>Launching is just the start. We monitor, maintain, and evolve your product based on real user behavior and technical needs. From performance improvements to feature updates—we help you stay fast, relevant, and ahead of the curve.</p>
+                    <a routerLink="/services" class="link-btn">View More <i class="flaticon-right-up"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="view-all-btn text-center">
+            <a routerLink="/services" class="default-btn">View All Services <i class="flaticon-right-up"></i></a>
+        </div>
+    </div>
+    <div
+        class="shape3"
+        [ngClass]="{'d-none': router.url === '/index-3'}"
+    >
+        <img src="assets/images/shape/shape3.png" alt="shape3">
+    </div>
+    <div
+        class="shape4"
+        [ngClass]="{'d-none': router.url === '/index-3'}"
+    >
+        <img src="assets/images/shape/shape4.png" alt="shape4">
+    </div>
+</div>

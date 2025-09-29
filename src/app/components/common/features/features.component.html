@@ -1,0 +1,44 @@
+<div
+    class="features-area pt-100 pb-75 dotted-bg bg-fbecd7"
+    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3' || router.url === '/index-4'}"
+>
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">TOP FEATURES</span>
+            <h2>What make us unique</h2>
+            <p>The truth is, plenty of teams can write code or design a nice interface. We go further, by helping you avoid building the wrong thing. We listen deeply, test early, and stay curious. The result? Products that actually solve problems and businesses that grow.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-feature-box mb-25">
+                    <div class="icon">
+                        <i class="flaticon-coding-1"></i>
+                    </div>
+                    <h4><a routerLink="/about">We Validate Before We Build</a></h4>
+                    <p>We won’t waste your time or money on features no one asked for. We validate ideas early with user interviews, prototypes, and lean testing, so we only build what truly matters.</p>
+                    <a routerLink="/about" class="link-btn">View More <i class="flaticon-right-up"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-feature-box mb-25">
+                    <div class="icon">
+                        <i class="flaticon-data-analysis"></i>
+                    </div>
+                    <h4><a routerLink="/about">We’re In It With You</a></h4>
+                    <p>Our goal is long-term impact. We build lasting partnerships based on transparency, experimentation, and shared success.</p>
+                    <a routerLink="/about" class="link-btn">View More <i class="flaticon-right-up"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-feature-box mb-25">
+                    <div class="icon">
+                        <i class="flaticon-ux-design"></i>
+                    </div>
+                    <h4><a routerLink="/about">We listen first</a></h4>
+                    <p>Before a single line of code, we dig into the problem space. Our approach is grounded in discovery, not assumptions, so we build based on insight, not guesswork.</p>
+                    <a routerLink="/about" class="link-btn">View More <i class="flaticon-right-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

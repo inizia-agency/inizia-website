@@ -1,0 +1,111 @@
+<div class="blog-area pt-100 pb-75 dotted-bg">
+    <div class="container">
+        <div class="section-title">
+            <span
+                class="sub-title"
+                [ngClass]="{'main-color': router.url === '/index-3'}"
+            >
+                OUR BLOG
+            </span>
+            <h2>Be genuine, be nice, know your audience</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Rutrum pretium pulvinar ut nec. Ac consequat blandit gravida turpis a risus pharetra amet molestie eget porta.</p>
+        </div>
+        <div
+            class="row justify-content-center"
+            [ngClass]="{'d-none': router.url === '/index-2'}"
+        >
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post mb-25">
+                    <a routerLink="/blog-details" class="image d-block">
+                        <img src="assets/images/blog/blog1.jpg" alt="blog-image">
+                    </a>
+                    <div class="content">
+                        <div class="date">
+                            18
+                            <span>Feb</span>
+                        </div>
+                        <h4><a routerLink="/blog-details">The Meta Pro is not the big fail it's made out to be</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur ut. Rutrum pretium pulvinar ut nec. Ato sits consequat blandit gravida.</p>
+                        <a routerLink="/blog-details" class="link-btn">Read More <i class="flaticon-right-up"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post mb-25">
+                    <a routerLink="/blog-details" class="image d-block">
+                        <img src="assets/images/blog/blog2.jpg" alt="blog-image">
+                    </a>
+                    <div class="content">
+                        <div class="date">
+                            17
+                            <span>Feb</span>
+                        </div>
+                        <h4><a routerLink="/blog-details">The most important tech terms you need to know</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur ut. Rutrum pretium pulvinar ut nec. Ato sits consequat blandit gravida.</p>
+                        <a routerLink="/blog-details" class="link-btn">Read More <i class="flaticon-right-up"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post mb-25">
+                    <a routerLink="/blog-details" class="image d-block">
+                        <img src="assets/images/blog/blog3.jpg" alt="blog-image">
+                    </a>
+                    <div class="content">
+                        <div class="date">
+                            16
+                            <span>Feb</span>
+                        </div>
+                        <h4><a routerLink="/blog-details">Intel's new Arc graphics will blow your mind</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur ut. Rutrum pretium pulvinar ut nec. Ato sits consequat blandit gravida.</p>
+                        <a routerLink="/blog-details" class="link-btn">Read More <i class="flaticon-right-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="row justify-content-center d-none"
+            [ngClass]="{'d-flex': router.url === '/index-2'}"
+        >
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post mb-25">
+                    <div class="content">
+                        <div class="date">
+                            18
+                            <span>Feb</span>
+                        </div>
+                        <h4><a routerLink="/blog-details">The Meta Pro is not the big fail it's made out to be</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur ut. Rutrum pretium pulvinar ut nec. Ato sits consequat blandit gravida.</p>
+                        <a routerLink="/blog-details" class="link-btn">Read More <i class="flaticon-right-up"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post mb-25">
+                    <div class="content">
+                        <div class="date">
+                            17
+                            <span>Feb</span>
+                        </div>
+                        <h4><a routerLink="/blog-details">The most important tech terms you need to know</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur ut. Rutrum pretium pulvinar ut nec. Ato sits consequat blandit gravida.</p>
+                        <a routerLink="/blog-details" class="link-btn">Read More <i class="flaticon-right-up"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post mb-25">
+                    <div class="content">
+                        <div class="date">
+                            16
+                            <span>Feb</span>
+                        </div>
+                        <h4><a routerLink="/blog-details">Intel's new Arc graphics will blow your mind</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur ut. Rutrum pretium pulvinar ut nec. Ato sits consequat blandit gravida.</p>
+                        <a routerLink="/blog-details" class="link-btn">Read More <i class="flaticon-right-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+.business-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+
+    .cont-divider {
+        border-top: 1px solid var(--blackColor);
+        width: 100%;
+    }
+
+    h1.logo {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.5rem 0;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: var(--blackColor);
+        cursor: pointer;
+        transition: color 0.3s;
+
+        i {
+            margin-bottom: 0.25rem;
+            font-size: 1.5rem;
+        }
+
+        span {
+            font-size: 1rem;
+            margin-top: 0.25rem;
+        }
+
+        &:hover {
+            color: var(--primaryColor);
+        }
+    }
+
+    h5.logo-full {
+        font-family: var(--thirdFontFamily);
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    p.slogan {
+        font-size: 1rem;
+        color: #666;
+    }
+
+    .vertical-stripes {
+        display: flex;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+
+        .red { background-color: var(--primaryColor); flex: 1; }
+        .grey { background-color: var(--beigeColor); width: 5px; }
+        .green { background-color: var(--secondaryColor); flex: 1; }
+        .blue { background-color: var(--thirdColor); flex: 1; }
+    }
+}
+.medium-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #000; /* Adjust based on your theme */
+}
+
+.medium-icon {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+

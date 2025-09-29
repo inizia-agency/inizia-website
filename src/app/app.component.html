@@ -1,0 +1,14 @@
+<div [ngClass]="{ 'dark-theme': darkMode, 'light-theme': !darkMode }">
+
+    <app-header *ngIf="showHeaderFooter"></app-header>
+    <router-outlet></router-outlet>
+    <app-footer *ngIf="showHeaderFooter"></app-footer>
+    <ngx-scrolltop></ngx-scrolltop>
+
+    <!-- Light/Dark Switch btn -->
+<!--    <div *ngIf="showHeaderFooter" class="dark-light-switch-btn">-->
+<!--        <button (click)="toggleDarkMode()">-->
+<!--            <i class='bx bxs-moon'></i>-->
+<!--        </button>-->
+<!--    </div>-->
+</div>

@@ -1,0 +1,52 @@
+@import "../../common/services/services.component.scss";
+
+.divider {
+  height: 1px;
+  background-color: #000000;
+}
+
+.sub-title {
+  color: var(--primaryColor);
+}
+
+.start-here-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.bold-uppercase {
+  font-weight: bolder;
+  font-style: italic;
+  text-transform: uppercase;
+  color: var(--secondaryColor);
+}
+
+.bold-uppercase-1 {
+  font-weight: bolder;
+  font-style: italic;
+  text-transform: uppercase;
+  color: var(--thirdColor);
+}
+
+.section-title.justified-wide {
+  max-width: 100%;
+  padding: 0 20px;
+}
+.section-title.justified-wide p {
+  text-align: justify;
+}
+
+
+.tier-card {
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+}

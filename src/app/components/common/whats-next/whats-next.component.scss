@@ -1,0 +1,484 @@
+.single-team-member {
+    text-align: center;
+
+    .image {
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        border-radius: 5px;
+        position: relative;
+        transform: rotate(45deg) translateZ(0px);
+        margin: {
+            top: 25px;
+            left: auto;
+            right: auto;
+            bottom: 25px;
+        };
+        div {
+            top: 50%;
+            left: 50%;
+            width: 170px;
+            height: 170px;
+            position: absolute;
+            transform: rotate(-45deg) translate(0%, -70%);
+            background: {
+                position: center center;
+                repeat: no-repeat;
+                size: cover;
+            };
+        }
+    }
+    .content {
+        margin-top: 45px;
+
+        h4 {
+            margin-bottom: 7px;
+            font: {
+                size: 22px;
+                weight: 600;
+            };
+        }
+        span {
+            display: block;
+            color: var(--paragraphColor);
+        }
+    }
+}
+.team-card {
+    .team-caption {
+        margin-top: 20px;
+
+        h4 {
+            font-size: 22px;
+            margin-bottom: 6px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: {
+                top: 15px;
+                bottom: 0;
+            };
+            li {
+                display: inline-block;
+                margin: {
+                    left: 4px;
+                    right: 4px;
+                };
+                a {
+                    width: 35px;
+                    height: 35px;
+                    font-size: 17px;
+                    border-radius: 50%;
+                    text-align: center;
+                    position: relative;
+                    display: inline-block;
+                    color: var(--blackColor);
+                    background-color: #f1f1f1;
+                    transition: var(--transition);
+
+                    i {
+                        left: 0;
+                        right: 0;
+                        top: 50%;
+                        position: absolute;
+                        transform: translateY(-50%);
+                    }
+                    &:hover {
+                        background-color: var(--primaryColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+    }
+}
+.d-none {
+    &.d-block {
+        display: block !important;
+    }
+    &.d-flex {
+        display: flex !important;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .single-team-member {
+        .image {
+            width: 90px;
+            height: 90px;
+            margin: {
+                top: 15px;
+                bottom: 25px;
+            };
+            div {
+                width: 140px;
+                height: 140px;
+            }
+        }
+        .content {
+            margin-top: 35px;
+
+            h4 {
+                margin-bottom: 7px;
+                font-size: 17px;
+            }
+        }
+    }
+    .team-card {
+        .team-caption {
+            margin-top: 20px;
+
+            h4 {
+                font-size: 17px;
+                margin-bottom: 5px;
+            }
+            ul {
+                margin-top: 12px;
+
+                li {
+                    margin: {
+                        left: 1px;
+                        right: 1px;
+                    };
+                    a {
+                        width: 32px;
+                        height: 32px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .single-team-member {
+        .content {
+            margin-top: 40px;
+
+            h4 {
+                font-size: 19px;
+            }
+        }
+    }
+    .team-card {
+        .team-caption {
+            h4 {
+                font-size: 19px;
+                margin-bottom: 6px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .single-team-member {
+        .content {
+            margin-top: 40px;
+
+            h4 {
+                font-size: 21px;
+            }
+        }
+    }
+    .team-card {
+        .team-caption {
+            h4 {
+                font-size: 21px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}
+
+.expertise-content {
+    .sub-title {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 5px;
+        color: var(--thirdColor);
+
+        &.main-color {
+            color: var(--secondaryColor);
+        }
+    }
+    h2 {
+        font-size: 44px;
+        margin-bottom: 10px;
+    }
+    p {
+        color: var(--blackColor);
+    }
+    .features-list {
+        padding-left: 0;
+        list-style-type: none;
+        margin: {
+            bottom: 0;
+            top: 40px;
+        };
+        li {
+            padding-left: 100px;
+            margin-bottom: 30px;
+            position: relative;
+
+            .icon {
+                transition: var(--transition);
+                margin-bottom: 15px;
+                position: absolute;
+                font-size: 70px;
+                line-height: 1;
+                left: 0;
+                top: 0;
+
+                &.main-color {
+                    color: var(--primaryColor);
+                }
+            }
+            h4 {
+                font-size: 22px;
+                margin-bottom: 12px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:hover {
+                .icon {
+                    transform: translateY(-5px);
+                    color: var(--primaryColor);
+                }
+            }
+        }
+    }
+}
+.imagine-image {
+    z-index: 1;
+    margin-right: 65px;
+    position: relative;
+    border-radius: 7px 115px 7px 7px;
+    padding: {
+        left: 10px;
+        top: 10px;
+    };
+    img {
+        border-radius: 7px 115px 7px 7px;
+    }
+    &::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        content: '';
+        position: absolute;
+        transition: var(--transition);
+        border-radius: 7px 115px 7px 7px;
+        background-color: var(--thirdColor);
+        margin: {
+            right: 10px;
+            bottom: 10px;
+        };
+    }
+    &:hover {
+        &::before {
+            background-color: var(--secondaryColor);
+        }
+    }
+}
+.expertise-image {
+    z-index: 1;
+    margin-right: 65px;
+    position: relative;
+    border-radius: 7px 115px 7px 7px;
+    padding: {
+        left: 10px;
+        top: 10px;
+    };
+    img {
+        border-radius: 7px 115px 7px 7px;
+    }
+    &::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        content: '';
+        position: absolute;
+        transition: var(--transition);
+        border-radius: 7px 115px 7px 7px;
+        background-color: var(--secondaryColor);
+        margin: {
+            right: 10px;
+            bottom: 10px;
+        };
+    }
+    &:hover {
+        &::before {
+            background-color: var(--primaryColor);
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .expertise-content {
+        .sub-title {
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        h2 {
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+        .features-list {
+            margin-top: 25px;
+
+            li {
+                padding-left: 56px;
+                margin-bottom: 25px;
+
+                .icon {
+                    font-size: 40px;
+                }
+                h4 {
+                    font-size: 17px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .expertise-image {
+        border-radius: 5px 50px 5px 5px;
+        padding: {
+            left: 7px;
+            top: 7px;
+        };
+        margin: {
+            right: 0;
+            bottom: 25px;
+        };
+        img {
+            border-radius: 5px 50px 5px 5px;
+        }
+        &::before {
+            border-radius: 5px 50px 5px 5px;
+            margin: {
+                right: 7px;
+                bottom: 7px;
+            };
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .expertise-content {
+        .sub-title {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .features-list {
+            margin-top: 25px;
+
+            li {
+                padding-left: 70px;
+                margin-bottom: 25px;
+
+                .icon {
+                    font-size: 50px;
+                }
+                h4 {
+                    font-size: 19px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .expertise-image {
+        margin: {
+            right: 0;
+            bottom: 25px;
+        };
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .expertise-content {
+        .sub-title {
+            font-size: 16px;
+        }
+        h2 {
+            font-size: 33px;
+            margin-bottom: 10px;
+        }
+        .features-list {
+            margin-top: 30px;
+
+            li {
+                padding-left: 80px;
+                margin-bottom: 25px;
+
+                .icon {
+                    font-size: 60px;
+                }
+                h4 {
+                    font-size: 21px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .expertise-image {
+        margin-right: 0;
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .expertise-content {
+        h2 {
+            font-size: 39px;
+            margin-bottom: 10px;
+        }
+    }
+    .expertise-image {
+        margin-right: 15px;
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}
