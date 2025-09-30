@@ -95,7 +95,7 @@ export class PortfolioDetailsPageComponent implements OnInit {
                         'Elders face loneliness and tech friction. We shaped a clear concept: an empathetic AI companion with very simple UX, targeted to elder users.',
                     details: {
                         category: 'Validation, Build & Sustain',
-                        status: 'About to launch v1',
+                        status: 'About to successfully launch v1',
                         website: 'https://tellie.me/',
                         contact: { phone: '+61450812952', email: 'hello@inizia.agency' }
                     },
@@ -116,8 +116,8 @@ export class PortfolioDetailsPageComponent implements OnInit {
                         'Rescue project with deadlines. We audited, triaged, and stabilised the app for App Store and Play Store submissions.',
                     details: {
                         category: 'Project Rescue',
-                        status: 'Submitted to stores',
-                        website: '',
+                        status: 'Successfully Delivered',
+                        website: 'https://www.benchon.com/',
                         contact: { phone: '+61450812952', email: 'hello@inizia.agency' }
                     },
                     iconSections: [
@@ -137,7 +137,7 @@ export class PortfolioDetailsPageComponent implements OnInit {
                         'SMEs suffer from fragmented digital presence. We validated a reviews MVP with hospitality, then iterated into a modular presence suite with short links and QR codes.',
                     details: {
                         category: 'Validation & Build',
-                        status: 'Validation done — building v1',
+                        status: 'Validation and MVP done, building v1',
                         website: 'https://zynk.to/',
                         contact: { phone: '+61450812952', email: 'hello@inizia.agency' }
                     },
@@ -158,7 +158,7 @@ export class PortfolioDetailsPageComponent implements OnInit {
                         'Nightclub group needed a loyalty app. External design existed, so we bridged the gap to implementation and integrated a points and tiered rewards system.',
                     details: {
                         category: 'Build',
-                        status: 'Deployed',
+                        status: 'Successfully Delivered (year 2022)',
                         website: 'https://artesianhospitality.com/',
                         contact: { phone: '+61450812952', email: 'hello@inizia.agency' }
                     },
@@ -178,8 +178,8 @@ export class PortfolioDetailsPageComponent implements OnInit {
                     description: 'Web app to handle construction projects.',
                     details: {
                         category: 'Build',
-                        status: 'Deployed',
-                        website: '',
+                        status: 'Successfully Delivered (year 2022)',
+                        website: 'https://paintprojex.com/au/',
                         contact: { phone: '+61450812952', email: 'hello@inizia.agency' }
                     },
                     iconSections: [
