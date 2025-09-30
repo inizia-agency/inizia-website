@@ -4,6 +4,8 @@
     <router-outlet></router-outlet>
     <app-footer *ngIf="showHeaderFooter"></app-footer>
     <ngx-scrolltop></ngx-scrolltop>
+    <!-- Hidden, off-canvas target where Google injects its button ONCE -->
+    <span id="gcal-hidden-target" class="gcal-hidden" aria-hidden="true"></span>
 
     <!-- Light/Dark Switch btn -->
 <!--    <div *ngIf="showHeaderFooter" class="dark-light-switch-btn">-->

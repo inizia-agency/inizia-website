@@ -56,6 +56,7 @@ import {WhatsNextomponent} from "./components/common/whats-next/whats-next.compo
 import {WorkProcessComponent} from "./components/common/work-process/work-process.component";
 import {BusinessCardComponent} from "./components/pages/business-card/business-card.component";
 import {TechUseComponent} from "./components/common/tech-use/tech-use.component";
+import {GcalButtonComponent} from "./components/common/gcalendar-button/gcal-button.component";
 
 @NgModule({
     declarations: [
@@ -102,6 +103,7 @@ import {TechUseComponent} from "./components/common/tech-use/tech-use.component"
         BlogRightSidebarPageComponent,
         WidgetSidebarComponent,
         WorkProcessComponent,
+        GcalButtonComponent,
     ],
     imports: [
         BrowserModule,
