@@ -2,7 +2,7 @@
 <div class="page-banner-area dotted-bg bg-fbecd7">
     <div class="container">
         <div class="page-banner-content">
-            <h1>Recent Projects</h1>
+            <h1>Case Study</h1>
             <ul class="meta">
                 <li><a routerLink="/">Home</a></li>
                 <li>Projects</li>
@@ -13,22 +13,25 @@
     <div class="shape2"><img src="assets/images/shape/shape2.png" alt="shape2"></div>
 </div>
 
-<!-- Projects -->
-<div class="projects-area pt-100 pb-75 dotted-bg">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6" *ngFor="let project of projects">
-                <div class="single-project-box mb-25">
-                    <a [routerLink]="['/project-details', project.id]" class="image d-block">
-                        <img [src]="project.image" alt="project-image">
-                    </a>
-                    <h4><a [routerLink]="['/project-details', project.id]">{{ project.title }}</a></h4>
-                    <a [routerLink]="['/project-details', project.id]" class="link-btn"><i class="flaticon-right-up"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+<app-portfolio-details-page></app-portfolio-details-page>
 <app-why-choose-us></app-why-choose-us>
 <app-faq></app-faq>
+
+
+<!-- Projects OLD -->
+<!--<div class="projects-area pt-100 pb-75 dotted-bg">-->
+<!--    <div class="container">-->
+<!--        <div class="row justify-content-center">-->
+<!--            <div class="col-lg-4 col-md-6" *ngFor="let project of projects">-->
+<!--                <div class="single-project-box mb-25">-->
+<!--                    <a [routerLink]="['/project-details', project.id]" class="image d-block">-->
+<!--                        <img [src]="project.image" alt="project-image">-->
+<!--                    </a>-->
+<!--                    <h4><a [routerLink]="['/project-details', project.id]">{{ project.title }}</a></h4>-->
+<!--                    <a [routerLink]="['/project-details', project.id]" class="link-btn"><i class="flaticon-right-up"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+

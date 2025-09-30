@@ -1,40 +1,43 @@
-<!-- Page Banner -->
-<div class="page-banner-area dotted-bg bg-fbecd7">
-    <div class="container">
-        <div class="page-banner-content">
-            <h1>{{ project.title }}</h1>
-            <ul class="meta">
-                <li><a routerLink="/">Home</a></li>
-                <li>Project Details</li>
-            </ul>
-        </div>
-    </div>
-    <div class="shape1"><img src="assets/images/shape/shape1.png" alt="shape1"></div>
-    <div class="shape2"><img src="assets/images/shape/shape2.png" alt="shape2"></div>
-</div>
-
-<!-- Project Details -->
+<!-- portfolio-details-page.component.html -->
 <div *ngIf="project">
     <div class="container pt-100 pb-75 dotted-bg">
+        <!-- Tabs header -->
         <div class="project-tabs pb-2">
             <ul class="nav nav-tabs">
-                <li *ngFor="let tab of project.tabs; let i = index" class="nav-item">
-                    <a class="nav-link" [class.active]="selectedTab === i" (click)="selectTab(i)">{{ tab.tabTitle }}</a>
+                <li class="nav-item" *ngFor="let tab of project.tabs; index as i; trackBy: trackByIndex">
+                    <a
+                            class="nav-link"
+                            [class.active]="selectedTab === i"
+                            (click)="selectTab(i)"
+                            role="button"
+                    >{{ tab.tabTitle }}</a
+                    >
                 </li>
             </ul>
         </div>
+
+        <!-- Tabs content -->
         <div class="tab-content">
-            <div *ngFor="let tab of project.tabs; let i = index" class="tab-pane" [class.active]="selectedTab === i">
+            <div
+                    class="tab-pane"
+                    *ngFor="let tab of project.tabs; index as i; trackBy: trackByIndex"
+                    [class.active]="selectedTab === i"
+                    [hidden]="selectedTab !== i"
+            >
                 <div class="project-details-area">
+                    <!-- Mobile image -->
                     <div class="project-details-image m-3 d-lg-none">
-                        <img [src]="tab.image" alt="project-image">
+                        <img [src]="tab.image" [alt]="tab.tabTitle" />
                     </div>
+
                     <div class="row">
                         <div class="col-lg-8 col-md-12 order-1 order-lg-1">
                             <div class="project-details-desc">
-                                <h2>{{ tab.tabTitle }}</h2>
+                                <h2 class="mb-2">{{ tab.tabTitle }}</h2>
                                 <p>{{ tab.description }}</p>
+
                                 <p *ngFor="let text of tab.additionalText">{{ text }}</p>
+
                                 <div class="icon-card mt-25 mb-25" *ngFor="let section of tab.iconSections">
                                     <i [class]="section.icon"></i>
                                     <h4>{{ section.title }}</h4>
@@ -42,6 +45,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-lg-4 col-md-12 order-1 order-lg-2">
                             <div class="project-details-sidebar">
                                 <div class="project-info">
@@ -49,21 +53,36 @@
                                     <ul class="list-unstyled mb-0">
                                         <li><span>Service:</span> {{ tab.details.category }}</li>
                                         <li><span>Client:</span> {{ tab.details.client }}</li>
-                                        <li class="text-wrap"><span>Status:</span> <a [href]="tab.details.website" target="_blank">{{ tab.details.status }}</a></li>
+                                        <li><span>Status:</span> {{ tab.details.status }}</li>
+                                        <li *ngIf="tab.details.website">
+                                            <span>Website:</span>
+                                            <a [href]="tab.details.website" target="_blank" rel="noopener">Visit</a>
+                                        </li>
                                     </ul>
                                 </div>
+
                                 <div class="project-contact-info order-3 order-lg-2">
                                     <h4>Let's Make Something Amazing Together!</h4>
                                     <ul class="list-unstyled mb-0">
-                                        <li><a [href]="'tel:' + tab.details.contact.phone"><i class="bx bx-phone-call"></i> {{ tab.details.contact.phone }}</a></li>
-                                        <li><a [href]="'mailto:' + tab.details.contact.email"><i class="bx bx-envelope"></i> {{ tab.details.contact.email }}</a></li>
+                                        <li>
+                                            <a [href]="'tel:' + tab.details.contact.phone"
+                                            ><i class="bx bx-phone-call"></i> {{ tab.details.contact.phone }}</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a [href]="'mailto:' + tab.details.contact.email"
+                                            ><i class="bx bx-envelope"></i> {{ tab.details.contact.email }}</a
+                                            >
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Desktop image -->
                     <div class="project-details-image m-3 d-none d-lg-block">
-                        <img [src]="tab.image" alt="project-image">
+                        <img [src]="tab.image" [alt]="tab.tabTitle" />
                     </div>
                 </div>
             </div>

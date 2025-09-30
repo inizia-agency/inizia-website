@@ -13,210 +13,174 @@
     <div class="shape2"><img src="assets/images/shape/shape2.png" alt="shape2"></div>
 </div>
 
-
 <div class="services-area pb-4 pt-lg-5 pb-lg-5 dotted-bg">
     <div class="container">
-        <!-- How It Works Section -->
+
         <div class="section-title justified-wide">
             <span class="sub-title">START HERE</span>
             <h2>How it works</h2>
             <div class="start-here-container">
-                <p>
-                    At Inizia, we meet you where you are in your product journey — from idea to launch, and beyond.
+                <p>At Inizia, we meet you where you are in your product journey — from idea to launch, and beyond.
                     Each tier is a monthly, fixed-fee partnership. We don’t charge by the hour or scope features line-by-line.
                     Instead, we work in sprints and retainers that align with your current goals — whether that’s validating an idea,
-                    building your MVP, stabilising a struggling product, or making ongoing improvements.
-                </p>
-                <p class="mt-3">
-                    <strong>You can start, pause, upgrade, or switch tiers</strong> as your product evolves. Each tier includes clear deliverables,
-                    real collaboration, and dedicated time from our team to make progress on what matters most.
-                </p>
+                    building your MVP, stabilising a struggling product, or making ongoing improvements.</p>
+                <p class="mt-3"><strong>You can start, pause, upgrade, or switch tiers</strong> as your product evolves. Each tier includes clear deliverables,
+                    real collaboration, and dedicated time from our team to make progress on what matters most.</p>
             </div>
         </div>
 
-        <div class="row justify-content-center">
-            <!-- Validate -->
-            <div class="tier-card single-service-box mb-25">
-                <div class="icon">
-                    <i class="flaticon-business-idea"></i>
+        <!-- Carousel Controls -->
+        <div class="services-controls">
+            <button class="nav-btn services-prev" aria-label="Previous services"><i class="flaticon-left"></i></button>
+            <button class="nav-btn services-next" aria-label="Next services"><i class="flaticon-right"></i></button>
+        </div>
+
+        <!-- Services Carousel -->
+        <div class="services-carousel swiper">
+            <div class="swiper-wrapper">
+
+                <!-- Validate -->
+                <div class="swiper-slide">
+                    <div class="tier-card single-service-box mb-25">
+                        <div class="icon"><i class="flaticon-business-idea"></i></div>
+                        <h4>Validate</h4>
+                        <p class="fst-italic small text-muted">Three months to test your idea with real users — before you invest in code.</p>
+                        <p>You’ve got the industry insight; we run structured experiments to confirm demand, shape the solution, and give you evidence to move forward confidently.</p>
+                        <span class="bold-uppercase">Who it’s for</span>
+                        <ul class="checked">
+                            <li>Business owners stepping into tech who want clarity before building</li>
+                            <li>Leaders needing proof for partners, boards or early backers</li>
+                        </ul>
+                        <span class="bold-uppercase-1">Benefits</span>
+                        <ul>
+                            <li>Clear go/no-go backed by customer data — reduce risk</li>
+                            <li>Prioritised feature set so you only build what matters</li>
+                            <li>Clickable prototype to align teams and support pitches</li>
+                            <li>Early audience capture via landing page, surveys and tests</li>
+                        </ul>
+                        <button class="second-default-btn mt-3" (click)="openBooking('Validate')">
+                            BOOK A FREE 30’ DISCOVERY MEETING <i class="flaticon-right-up"></i>
+                        </button>
+                    </div>
                 </div>
-                <h4>Validate</h4>
-                <p class="fst-italic small text-muted">Run structured experiments to see if your idea is worth building.</p>
-                <p>
-                    You’ve got a product idea — but is it solving the right problem? Validate is our hands-on, low-risk approach to test the potential of your concept before investing in full development.
-                </p>
-                <span class="bold-uppercase-1">What’s included:</span>
-                <ul>
-                    <li>Mastermind workshop to shape your idea</li>
-                    <li>Competitor, user, and market research</li>
-                    <li>Landing page, survey, and ad campaign</li>
-                    <li>Clickable prototype</li>
-                    <li>Clear go/no-go report based on real insights</li>
-                </ul>
-                <p class="small fst-italic mt-2">For example: Launching a new B2B app? We’ll test demand, interview users, and build a prototype that helps you pitch or plan with confidence.</p>
-                <span class="bold-uppercase">Who is it for:</span>
-                <p>Founders who want clarity, insight, and confidence before committing to build.</p>
-            </div>
 
-            <!-- Accelerate -->
-            <div class="tier-card single-service-box mb-25">
-                <div class="icon">
-                    <i class="flaticon-coding"></i>
+                <!-- Build -->
+                <div class="swiper-slide">
+                    <div class="tier-card single-service-box mb-25">
+                        <div class="icon"><i class="flaticon-coding"></i></div>
+                        <h4>Build</h4>
+                        <p class="fst-italic small text-muted">Your product team from MVP to traction. Launch, learn, iterate.</p>
+                        <p>We design, code and ship your MVP in ~90 days, then adapt based on real usage. One flexible engagement that moves from MVP into iteration and monetisation without you juggling vendors.</p>
+                        <span class="bold-uppercase">Who it’s for</span>
+                        <ul class="checked">
+                            <li>Non-technical founders who want an accountable, senior product team</li>
+                            <li>Businesses ready to launch a first version and improve every month</li>
+                        </ul>
+                        <span class="bold-uppercase-1">Benefits</span>
+                        <ul>
+                            <li>Fast path to a working product in customers’ hands</li>
+                            <li>Measurable monthly progress and transparent releases</li>
+                            <li>Lean scope control so spend tracks to outcomes</li>
+                            <li>Technical foundation built to scale or hand over cleanly</li>
+                        </ul>
+                        <button class="second-default-btn mt-3" (click)="openBooking('Build')">
+                            BOOK A FREE 30’ DISCOVERY MEETING <i class="flaticon-right-up"></i>
+                        </button>
+                    </div>
                 </div>
-                <h4>Accelerate</h4>
-                <p class="fst-italic small text-muted">Build fast with a dedicated product team at your side.</p>
-                <p>
-                    Ready to go live? Accelerate is your dedicated product team — designing, coding, releasing and iterating in fast, focused sprints. You stay focused on business. We ship the product.
-                </p>
-                <span class="bold-uppercase-1">What’s included:</span>
-                <ul>
-                    <li>UX/UI design & feature prioritisation</li>
-                    <li>Full-stack development & infrastructure</li>
-                    <li>Weekly updates + strategy workshops</li>
-                    <li>Agile delivery & CI/CD setup</li>
-                    <li>System documentation & handover if needed</li>
-                </ul>
-                <p class="small fst-italic mt-2">For example: Building a booking app? We’ll map the flows, build the backend, integrate payments, and iterate toward a polished v1 release.</p>
 
-                <span class="bold-uppercase">Who is it for:</span>
-                <p>Founders and teams ready to build, test, and release with speed and strategy.</p>
-            </div>
-
-            <!-- Grow -->
-            <div class="tier-card single-service-box mb-25">
-                <div class="icon">
-                    <i class="flaticon-web-optimization"></i>
+                <!-- Sustain -->
+                <div class="swiper-slide">
+                    <div class="tier-card single-service-box mb-25">
+                        <div class="icon"><i class="flaticon-web-optimization"></i></div>
+                        <h4>Sustain</h4>
+                        <p class="fst-italic small text-muted">Keep momentum with small features, UX polish and steady improvements.</p>
+                        <p>Your product is live and stable. Sustain keeps it fresh and useful with light adjustments, UX enhancements and fixes that improve retention — without the cost of a full build cycle.</p>
+                        <span class="bold-uppercase">Who it’s for</span>
+                        <ul class="checked">
+                            <li>Teams post-launch who want continuous improvement at a lighter pace</li>
+                            <li>Founders balancing go-to-market activity with product care</li>
+                        </ul>
+                        <span class="bold-uppercase-1">Benefits</span>
+                        <ul>
+                            <li>Happier users via regular UX refinements</li>
+                            <li>Reduced tech debt with ongoing fixes and updates</li>
+                            <li>Clear monthly impact without heavy overhead</li>
+                            <li>Easy switch back to Build when a bigger push is needed</li>
+                        </ul>
+                        <button class="second-default-btn mt-3" (click)="openBooking('Sustain')">
+                            BOOK A FREE 30’ DISCOVERY MEETING <i class="flaticon-right-up"></i>
+                        </button>
+                    </div>
                 </div>
-                <h4>Grow</h4>
-                <p class="fst-italic small text-muted">Continuous small improvements to keep your product fresh.</p>
-                <p>
-                    Already launched, but not done? Grow is a flexible way to keep your product polished, useful, and performing — without jumping into another full build cycle.
-                </p>
-                <span class="bold-uppercase-1">What’s included:</span>
-                <ul>
-                    <li>Minor UX/UI improvements (up to 5/month)</li>
-                    <li>Light feature adjustments (up to 3/month)</li>
-                    <li>Bug fixes & support</li>
-                    <li>Performance reports</li>
-                    <li>Optional monthly strategy check-in</li>
-                </ul>
-                <p class="small fst-italic mt-2">For example: Need to tweak form fields or clean up a mobile layout? We’ll keep it fresh and relevant without a full rebuild.</p>
 
-                <span class="bold-uppercase">Who is it for:</span>
-                <p>Product owners seeking consistent polish, light improvements, and UX care.</p>
-            </div>
-
-            <!-- Maintain -->
-            <div class="tier-card single-service-box mb-25">
-                <div class="icon">
-                    <i class="flaticon-front-end"></i>
+                <!-- Maintain -->
+                <div class="swiper-slide">
+                    <div class="tier-card single-service-box mb-25">
+                        <div class="icon"><i class="flaticon-front-end"></i></div>
+                        <h4>Maintain</h4>
+                        <p class="fst-italic small text-muted">Peace of mind. Monitoring, security and updates handled for you.</p>
+                        <p>We keep your app healthy behind the scenes so you can focus on the business. Monitoring, security patches, dependency updates and light content changes are covered.</p>
+                        <span class="bold-uppercase">Who it’s for</span>
+                        <ul class="checked">
+                            <li>Products no longer in full build mode that still need reliable care</li>
+                            <li>Owners who want zero-fuss tech upkeep</li>
+                        </ul>
+                        <span class="bold-uppercase-1">Benefits</span>
+                        <ul>
+                            <li>Higher uptime and fewer emergencies</li>
+                            <li>Security and package updates done on schedule</li>
+                            <li>Clear monthly health reports and release logs</li>
+                            <li>Lower long-term risk through preventative maintenance</li>
+                        </ul>
+                        <button class="second-default-btn mt-3" (click)="openBooking('Maintain')">
+                            BOOK A FREE 30’ DISCOVERY MEETING <i class="flaticon-right-up"></i>
+                        </button>
+                    </div>
                 </div>
-                <h4>Maintain</h4>
-                <p class="fst-italic small text-muted">Ongoing monitoring, maintenance, and peace of mind.</p>
-                <p>
-                    Maintain is our behind-the-scenes support layer — quietly keeping your product secure, stable and running smoothly, so you don’t have to think about it.
-                </p>
-                <span class="bold-uppercase-1">What’s included:</span>
-                <ul>
-                    <li>Performance monitoring and health checks</li>
-                    <li>Security updates and bug fixes</li>
-                    <li>Quarterly package updates</li>
-                    <li>Release tracking and reports</li>
-                    <li>Light copy and visual adjustments</li>
-                </ul>
-                <p class="small fst-italic mt-2">For example: We catch broken links, patch bugs, and keep your stack current — while you focus on growing your business.</p>
 
-                <span class="bold-uppercase">Who is it for:</span>
-                <p>Founders and teams who want a reliable partner for ongoing care and stability.</p>
-            </div>
-
-            <!-- Project Rescue -->
-            <div class="tier-card single-service-box mb-25">
-                <div class="icon">
-                    <i class="flaticon-coding-1"></i>
+                <!-- Project Rescue -->
+                <div class="swiper-slide">
+                    <div class="tier-card single-service-box mb-25">
+                        <div class="icon"><i class="flaticon-coding-1"></i></div>
+                        <h4>Project Rescue</h4>
+                        <p class="fst-italic small text-muted">Short, high-intensity recovery for at-risk products.</p>
+                        <p>When delivery stalls or quality slips, we step in fast. We audit, triage and stabilise the codebase, then ship against clear recovery milestones so you can regain control.</p>
+                        <span class="bold-uppercase">Who it’s for</span>
+                        <ul class="checked">
+                            <li>Businesses inheriting broken builds or overdue projects</li>
+                            <li>Leaders who need a trusted team to steady the ship quickly</li>
+                        </ul>
+                        <span class="bold-uppercase-1">Benefits</span>
+                        <ul>
+                            <li>Clarity in two weeks with a practical recovery plan</li>
+                            <li>Rapid risk reduction and restored stakeholder confidence</li>
+                            <li>Codebase stabilised and ready for ongoing development</li>
+                            <li>Smoother handover into Build, Sustain or your internal team</li>
+                        </ul>
+                        <button class="second-default-btn mt-3" (click)="openBooking('Project Rescue')">
+                            BOOK A FREE 30’ DISCOVERY MEETING <i class="flaticon-right-up"></i>
+                        </button>
+                    </div>
                 </div>
-                <h4>Project Rescue</h4>
-                <p class="fst-italic small text-muted ">Stabilise and recover a product that’s gone off track.</p>
-                <p>
-                    Something’s not working — and time’s running out. Project Rescue is an intensive, short-term engagement to audit, triage, and stabilise a failing or stalled product.
-                </p>
-                <span class="bold-uppercase-1">What’s included:</span>
-                <ul>
-                    <li>Rapid codebase audit & findings report</li>
-                    <li>Recovery & stabilisation plan</li>
-                    <li>Critical fixes and UX rebuilds</li>
-                    <li>Infrastructure, backend and frontend work</li>
-                    <li>Project portal + coordination with your team</li>
-                </ul>
-                <p class="small fst-italic mt-2">For example: Inheriting a broken app from another agency? We’ll step in, clean it up, and get it over the line — fast.</p>
 
-                <span class="bold-uppercase">Who is it for:</span>
-                <p>Businesses with a high-stakes, high-pressure project that needs fast recovery.</p>
             </div>
 
-            <!-- CTA -->
-            <div class="text-center mb-lg-5">
-                <a href="/assets/inizia-service-offer.pdf" class="second-default-btn" download>
-                    DOWNLOAD THE FULL SERVICE GUIDE <i class="flaticon-right-up"></i>
-                </a>
-                <p class="mt-2 small text-muted text-italic">
-                    Get a detailed breakdown of what’s included in each tier, pricing, and how to choose the right path for your product.
-                </p>
-            </div>
+            <!-- Pagination (dots) -->
+            <div class="services-pagination swiper-pagination"></div>
+        </div>
+
+        <!-- Bottom CTA -->
+        <div class="text-center mb-lg-5">
+            <a href="/assets/inizia-service-offer.pdf" class="second-default-btn" download>
+                DOWNLOAD THE FULL SERVICE GUIDE <i class="flaticon-right-up"></i>
+            </a>
+            <p class="mt-2 small text-muted text-italic">
+                A detailed breakdown of inclusions, pricing and how to choose the right path.
+            </p>
         </div>
     </div>
 
     <app-tech-use></app-tech-use>
     <app-work-process></app-work-process>
-
-    <!-- Services OLD -->
-    <!--<div class="services-area pt-4 pb-4 pt-lg-5 pb-lg-5 dotted-bg">-->
-    <!--    <div class="container">-->
-    <!--        <div class="row justify-content-center">-->
-    <!--            <div class="col-lg-6 col-md-6 col-sm-6">-->
-    <!--                <div class="single-service-box mb-25">-->
-    <!--                    <div class="icon">-->
-    <!--                        <i class="flaticon-business-idea"></i>-->
-    <!--                    </div>-->
-    <!--                    <h4>Idea Validation & Strategy</h4>-->
-    <!--                    <p>-->
-    <!--                        Every great product starts with a clear, validated idea. We help you go from gut feeling to proven opportunity through user interviews, rapid prototyping, and lean experiments. Together, we define what to build (and what not to), aligning your business goals with real user needs—so you can move forward with confidence, not guesswork.-->
-    <!--                    </p>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--            <div class="col-lg-6 col-md-6 col-sm-6">-->
-    <!--                <div class="single-service-box mb-25">-->
-    <!--                    <div class="icon">-->
-    <!--                        <i class="flaticon-ux-design"></i>-->
-    <!--                    </div>-->
-    <!--                    <h4>UI/UX Design</h4>-->
-    <!--                    <p>-->
-    <!--                        We design digital experiences that make sense—visually, emotionally, and functionally. Grounded in research and shaped by real-world usage, our interfaces are crafted to guide users effortlessly through your product. From first impressions to final conversions, we design with purpose, not just polish.-->
-    <!--                    </p>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--            <div class="col-lg-6 col-md-6 col-sm-6">-->
-    <!--                <div class="single-service-box mb-25">-->
-    <!--                    <div class="icon">-->
-    <!--                        <i class="flaticon-coding"></i>-->
-    <!--                    </div>-->
-    <!--                    <h4>Software Development</h4>-->
-    <!--                    <p>-->
-    <!--                        We build web and mobile apps that are fast, flexible, and ready to evolve. Whether you're launching a lean MVP or scaling an existing product, our development process is structured around clean architecture, modular systems, and short iteration cycles—ensuring you get to market quickly without compromising quality.-->
-    <!--                    </p>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--            <div class="col-lg-6 col-md-6 col-sm-6">-->
-    <!--                <div class="single-service-box mb-25">-->
-    <!--                    <div class="icon">-->
-    <!--                        <i class="flaticon-data-analysis"></i>-->
-    <!--                    </div>-->
-    <!--                    <h4>Maintenance & Growth</h4>-->
-    <!--                    <p>-->
-    <!--                        Launch is just the beginning. We provide ongoing support to keep your product secure, up-to-date, and continuously improving. From bug fixes and performance enhancements to feature rollouts and analytics-driven iteration—we help your product stay sharp as your business grows.-->
-    <!--                    </p>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</div>-->
+</div>

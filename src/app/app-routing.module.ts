@@ -19,7 +19,6 @@ const routes: Routes = [
     {path: 'values', component: TeamPageComponent},
     {path: 'services', component: ServicesPageOneComponent},
     {path: 'projects', component: PortfolioPageComponent},
-    {path: 'project-details/:id', component: PortfolioDetailsPageComponent},
     {path: 'clients-feedback', component: ClientsFeedbackPageComponent},
     {path: 'faq', component: FaqPageComponent},
     {path: 'privacy-policy', component: PrivacyPolicyPageComponent},
