@@ -1,6 +1,5 @@
-<!-- portfolio-details-page.component.html -->
 <div *ngIf="project">
-    <div class="container pt-100 pb-75 dotted-bg">
+    <div class="px-4 pt-100 pb-75 dotted-bg">
         <!-- Tabs header -->
         <div class="project-tabs pb-2">
             <ul class="nav nav-tabs">
@@ -25,11 +24,6 @@
                     [hidden]="selectedTab !== i"
             >
                 <div class="project-details-area">
-                    <!-- Mobile image -->
-                    <div class="project-details-image m-3 d-lg-none">
-                        <img [src]="tab.image" [alt]="tab.tabTitle" />
-                    </div>
-
                     <div class="row">
                         <div class="col-lg-8 col-md-12 order-1 order-lg-1">
                             <div class="project-details-desc">
@@ -48,15 +42,23 @@
 
                         <div class="col-lg-4 col-md-12 order-1 order-lg-2">
                             <div class="project-details-sidebar">
+                                <!-- Unified top image (desktop & mobile) -->
+                                <div
+                                        class="project-shot"
+                                        [ngClass]="tab.device === 'mobile' ? 'shot--mobile' : 'shot--desktop'"
+                                >
+                                    <div class="shot-box">
+                                        <img [src]="tab.image" [alt]="tab.tabTitle" loading="lazy" />
+                                    </div>
+                                </div>
                                 <div class="project-info">
                                     <h4>Project Information</h4>
                                     <ul class="list-unstyled mb-0">
-                                        <li><span>Service:</span> {{ tab.details.category }}</li>
-                                        <li><span>Client:</span> {{ tab.details.client }}</li>
-                                        <li><span>Status:</span> {{ tab.details.status }}</li>
+                                        <li><span>Service Package: </span> {{ tab.details.category }}</li>
+                                        <li><span>Status: </span> {{ tab.details.status }}</li>
                                         <li *ngIf="tab.details.website">
-                                            <span>Website:</span>
-                                            <a [href]="tab.details.website" target="_blank" rel="noopener">Visit</a>
+                                            <span>Website: </span>
+                                            <a [href]="tab.details.website" target="_blank" rel="noopener" class="text-decoration-underline">Visit</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -65,24 +67,19 @@
                                     <h4>Let's Make Something Amazing Together!</h4>
                                     <ul class="list-unstyled mb-0">
                                         <li>
-                                            <a [href]="'tel:' + tab.details.contact.phone"
-                                            ><i class="bx bx-phone-call"></i> {{ tab.details.contact.phone }}</a
-                                            >
+                                            <a [href]="'tel:' + tab.details.contact.phone">
+                                                <i class="bx bx-phone-call"></i> {{ tab.details.contact.phone }}
+                                            </a>
                                         </li>
                                         <li>
-                                            <a [href]="'mailto:' + tab.details.contact.email"
-                                            ><i class="bx bx-envelope"></i> {{ tab.details.contact.email }}</a
-                                            >
+                                            <a [href]="'mailto:' + tab.details.contact.email">
+                                                <i class="bx bx-envelope"></i> {{ tab.details.contact.email }}
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Desktop image -->
-                    <div class="project-details-image m-3 d-none d-lg-block">
-                        <img [src]="tab.image" [alt]="tab.tabTitle" />
                     </div>
                 </div>
             </div>

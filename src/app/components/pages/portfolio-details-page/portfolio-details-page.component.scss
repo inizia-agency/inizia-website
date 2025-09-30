@@ -7,6 +7,54 @@
         border-radius: 20px;
     }
 }
+/* ---- Image mockup adjustments ---- */
+.project-shot {
+    text-align: center;
+    margin: 20px 0;
+
+    .shot-box {
+        display: inline-block;
+        border-radius: 20px;
+        overflow: hidden;
+
+        img {
+            display: block;
+            border-radius: 20px;
+            height: auto;
+        }
+    }
+
+    &.shot--desktop img {
+        max-width: 800px;   /* adjust laptop width */
+        max-height: 450px;  /* keep laptop proportional */
+        width: 100%;
+        object-fit: contain;
+    }
+
+    &.shot--mobile img {
+        max-width: 280px;   /* narrower phone width */
+        max-height: 300px;  /* cap tall height */
+        width: auto;        /* preserve ratio */
+        object-fit: contain;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+/* ---- Tabs scroll on mobile ---- */
+.project-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    .nav-tabs {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+
+    .nav-item {
+        flex: 0 0 auto;
+    }
+}
 a.nav-link {
     color: var(--primaryColor);
 }
@@ -91,12 +139,12 @@ a.nav-link {
             li {
                 color: var(--paragraphColor);
                 margin-bottom: 20px;
-                font-size: 18px;
+                font-size: 16px;
 
                 span {
                     width: 115px;
-                    font-size: 20px;
-                    display: inline-block;
+                    font-size: 18px;
+                    font-weight: bolder;
                     color: var(--blackColor);
                 }
                 a {
@@ -407,6 +455,12 @@ a.nav-link {
         }
     }
 
+}
+
+@media only screen and (max-width: 1280px) {
+    .project-details-sidebar {
+        margin-top: 30px;
+    }
 }
 
 /* Min width 992px to Max width 1199px */
