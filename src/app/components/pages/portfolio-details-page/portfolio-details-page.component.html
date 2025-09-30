@@ -65,18 +65,7 @@
 
                                 <div class="project-contact-info order-3 order-lg-2">
                                     <h4>Let's Make Something Amazing Together!</h4>
-                                    <ul class="list-unstyled mb-0">
-                                        <li>
-                                            <a [href]="'tel:' + tab.details.contact.phone">
-                                                <i class="bx bx-phone-call"></i> {{ tab.details.contact.phone }}
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a [href]="'mailto:' + tab.details.contact.email">
-                                                <i class="bx bx-envelope"></i> {{ tab.details.contact.email }}
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    <app-gcal-button label="Access a discovery session" brandClass="default-btn"></app-gcal-button>
                                 </div>
                             </div>
                         </div>

@@ -18,106 +18,92 @@
     <div class="container">
         <div class="faq-accordion">
             <accordion [isAnimated]="true" [closeOthers]="oneAtATime">
-
-                <!-- WORKING WITH INIZIA -->
-                <accordion-group heading="What makes Inizia different from other agencies?" [isOpen]="isFirstOpen">
+                <accordion-group heading="I’ve never built a tech product before. How do I know I’m not wasting money?" [isOpen]="isFirstOpen">
+                    <p>At Inizia, we don’t dive straight into coding. We start with validation — experiments, research, prototypes, and real feedback. By the time we build, you’ll already know there’s traction behind your idea. This saves you from the costly mistake of building something nobody wants.</p>
+                </accordion-group>
+                <accordion-group heading="How do I know what it will really cost me?" >
+                    <p>No hidden fees. We work on fixed monthly service tiers (Validate, Build, Sustain, Maintain, Project Rescue). You’ll always know your monthly investment up front, with no change-order surprises.</p>
+                </accordion-group>
+                <accordion-group heading="How do I know you’ll actually understand my industry?" >
+                    <p>You bring the domain expertise — we bring the product and tech expertise. We don’t build in silos; we collaborate closely, running workshops and strategy sessions to combine your knowledge with our product skills.</p>
+                </accordion-group>
+                <accordion-group heading="What if I change my mind about features or priorities?" >
+                    <p>That’s expected. Our model is sprint-based and flexible. Each 2–4 week cycle we re-prioritise based on your goals and what we’ve learned from users. You’re not locked into a rigid scope.</p>
+                </accordion-group>
+                <accordion-group heading="I’ve heard horror stories of dev shops overpromising and vanishing. How are you different?" >
+                    <p>We work in the open. You get a live project portal with updates, regular check-ins, and clear deliverables at the end of every sprint. No black box, no disappearing act.</p>
+                </accordion-group>
+                <accordion-group heading="Can you take over a project that’s already gone off the rails?" >
+                    <p>Yes — that’s exactly what our Project Rescue package is for. We audit your codebase, triage issues, and stabilise things quickly. It’s not glamorous work, but it’s one of our strengths — and it’s something most agencies avoid.</p>
+                </accordion-group>
+                <accordion-group heading="Do you work with startups that aren’t funded yet?" >
+                    <p>If you have capital set aside, yes. We’re built for founders who are serious about executing, not just exploring an idea. Our packages are lean but still require commitment — that’s how we keep quality high.</p>
+                </accordion-group>
+                <accordion-group heading="What if I just need ongoing maintenance, not big new features?" >
+                    <p>That’s what our Maintain and Sustain service tiers are for. We keep your app secure, updated, and polished — without the cost of a full build team.</p>
+                </accordion-group>
+                <accordion-group heading="Will I own the code and IP?" >
+                    <p>100%. All intellectual property is transferred to you. You’re building your product, and we make sure you own it.</p>
+                </accordion-group>
+                <accordion-group heading="Do I need to hire a designer, developer, or project manager separately?" >
+                    <p>No — Inizia is your full product team. We cover design, development, testing, documentation, and strategy. That’s why our model works so well for non-technical founders.</p>
+                </accordion-group>
+                <accordion-group heading="What if I want to bring development in-house later?" >
+                    <p>That’s part of our journey design. We can help you stabilise, hand over clean technical documentation for you technical in-house team to know exactly where to start and we transfer everything under your name.</p>
+                </accordion-group>
+                <accordion-group heading="How fast can we get something live?" >
+                    <p>With our Build package, we usually get an MVP live in as little as 2 months. That’s a real product in your users’ hands — fast enough for traction and feedback.</p>
+                </accordion-group>
+                <accordion-group heading="How do I know you won’t build something overcomplicated?" >
+                    <p>We’re obsessed with lean product principles. Every feature has to prove its value. We’d rather launch a focused, usable product than waste time and money on unnecessary complexity.</p>
+                </accordion-group>
+                <accordion-group heading="What happens if my product fails?" >
+                    <p>Then you’ve saved yourself hundreds of thousands of dollars by learning early. Our validation sprints are designed to get you answers quickly — if it’s a “no-go,” you walk away with clarity and minimal sunk cost. That’s still a win.</p>
+                </accordion-group>
+                <accordion-group heading="hy should I invest in Inizia instead of just hiring a CTO?" >
+                    <p>Hiring a full-time CTO and product team is one of the most expensive moves a founder can make — easily six figures a year plus a large chunk of equity. With Inizia, you get the equivalent firepower of a CTO, designers, and developers for a fraction of that cost, with no equity given away. We help you build, validate, and grow your product while you keep control of your company and capital.</p>
+                </accordion-group>
+                <accordion-group heading="Do you help validate ideas before building?">
+                    <p>
+                        Yes—that’s at the core of what we do. We use interviews, lean prototypes, and experiments to help you avoid building the wrong thing. You’ll get real feedback before investing heavily in development.
+                    </p>
+                </accordion-group>
+                <accordion-group heading="What if I already have an MVP or prototype?">
+                    <p>
+                        Great! We’ll review what you have, talk to users (if you have some), and explore how to improve or scale it. Whether you need a redesign, technical improvements, or feature strategy—we can help.
+                    </p>
+                </accordion-group>
+                <accordion-group heading="What kind of products do you build?">
+                    <p>
+                        We specialize in custom web and mobile applications—whether it’s an MVP, internal tool, marketplace, or SaaS product. Every build is tailored to your goals and user needs, not based on templates.
+                    </p>
+                </accordion-group>
+                <accordion-group heading="Can I be involved throughout the process?">
+                    <p>
+                        Definitely. We work collaboratively and value your input. You’ll be part of key decisions and see progress regularly—no black boxes, no long silences.
+                    </p>
+                </accordion-group>
+                <accordion-group heading="Do you offer support after launch?">
+                    <p>
+                        Yes—launch is just the beginning. We provide post-launch support, help you track usage, fix bugs, and roll out improvements based on real data. If your product evolves, we’ll evolve with you.
+                    </p>
+                </accordion-group>
+                <accordion-group heading="What makes Inizia different from other agencies?">
                     <p>
                         We focus on building the right product—starting with real user problems, validating before coding, and working in short, transparent feedback loops. You’ll never wonder what we’re doing or why—we build alongside you, not just for you.
                     </p>
                 </accordion-group>
-
                 <accordion-group heading="How do we get started?">
                     <p>
                         First, we sign a mutual NDA so you feel safe sharing openly. Then we jump into a discovery call to understand your idea, your users, and your goals. From there, we outline a plan that fits your stage and budget.
                     </p>
                 </accordion-group>
-
-                <accordion-group heading="What if I only need help with part of the process?">
-                    <p>
-                        That works too. Whether you need help validating your idea, improving UX, or maintaining your current app—we can jump in where you need us most.
-                    </p>
-                </accordion-group>
-
-                <accordion-group heading="How will I be involved throughout the project?">
-                    <p>
-                        Very. We work <em>with</em> you, not just for you. Every client gets access to a private collaboration portal where you can track progress in real-time, see tasks broken down by phase, ask questions, and view all signed documents and shared assets in one place. <br><br>
-                        This isn’t a one-way handoff—it’s a shared workspace where strategy, design, and development are transparent and collaborative. You’ll always know what’s happening, what’s coming next, and how your product is evolving. <br><br>
-                        We also create a dedicated group chat to keep communication flowing—perfect for quick questions, async feedback, or sharing inspiration along the way. It’s a true partnership.
-                    </p>
-                </accordion-group>
-
-                <accordion-group heading="What role will I play after hiring Inizia?">
-                    <p>
-                        You’re not just a client—you’re a key part of the team. We consider you the domain expert: you know your industry, your users, and the problem better than anyone. Your insight shapes everything we build. <br><br>
-                        That’s why our process is so collaborative. We’ll bring product thinking, design, and technical expertise—but we rely on your deep knowledge to make the right calls. Together, we build smarter.
-                    </p>
-                </accordion-group>
-
                 <accordion-group heading="Who owns the code and the work you create?">
                     <p>
                         You do—100%. Everything we build for you under contract is yours. While we may manage the codebase during the project, we guarantee full handover upon completion or termination. <br><br>
                         We also sign legal agreements that protect your ownership and ensure we will never reuse your code, designs, or ideas for any other purpose or project, especially within your industry. Your IP stays yours—always.
                     </p>
                 </accordion-group>
-
-                <accordion-group heading="I have an idea, but I’m not technical. Can you still help?">
-                    <p>
-                        Absolutely. Many of our clients come to us with just a concept or a problem they’ve noticed in their industry. We’ll help you shape it, test assumptions, and turn it into a product that solves real user needs.
-                    </p>
-                </accordion-group>
-
-                <!-- VALIDATION & STRATEGY -->
-                <accordion-group heading="Do you help validate ideas before building?">
-                    <p>
-                        Yes—that’s at the core of what we do. We use interviews, lean prototypes, and experiments to help you avoid building the wrong thing. You’ll get real feedback before investing heavily in development.
-                    </p>
-                </accordion-group>
-
-                <accordion-group heading="What if I already have an MVP or prototype?">
-                    <p>
-                        Great! We’ll review what you have, talk to users (if you have some), and explore how to improve or scale it. Whether you need a redesign, technical improvements, or feature strategy—we can help.
-                    </p>
-                </accordion-group>
-
-                <!-- DESIGN & DEVELOPMENT -->
-                <accordion-group heading="What kind of products do you build?">
-                    <p>
-                        We specialize in custom web and mobile applications—whether it’s an MVP, internal tool, marketplace, or SaaS product. Every build is tailored to your goals and user needs, not based on templates.
-                    </p>
-                </accordion-group>
-
-                <accordion-group heading="Do you only build apps, or do you design them too?">
-                    <p>
-                        We do both. Design and development work hand in hand here—our design process is research-led and focused on creating intuitive, scalable interfaces your users will love.
-                    </p>
-                </accordion-group>
-
-                <accordion-group heading="Can I be involved throughout the process?">
-                    <p>
-                        Definitely. We work collaboratively and value your input. You’ll be part of key decisions and see progress regularly—no black boxes, no long silences.
-                    </p>
-                </accordion-group>
-
-                <!-- TIMELINE & COST -->
-                <accordion-group heading="How long does it take to build a product?">
-                    <p>
-                        It depends on your scope and stage. A lean MVP might take 6–10 weeks, while a larger platform could take 3–6 months. We always start with a phased plan so you can launch early and learn fast.
-                    </p>
-                </accordion-group>
-
-                <accordion-group heading="How much does it cost to work with Inizia?">
-                    <p>
-                        We price based on complexity and scope, broken into fixed phases like validation, prototyping, and build. Some clients start small with a prototype; others move into larger builds. What matters most is ensuring we’re investing in the right thing. Software is a big investment, and our job is to help you spend every dollar wisely.
-                    </p>
-                </accordion-group>
-
-                <!-- POST-LAUNCH & SUPPORT -->
-                <accordion-group heading="Do you offer support after launch?">
-                    <p>
-                        Yes—launch is just the beginning. We provide post-launch support, help you track usage, fix bugs, and roll out improvements based on real data. If your product evolves, we’ll evolve with you.
-                    </p>
-                </accordion-group>
-
             </accordion>
         </div>
     </div>

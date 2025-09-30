@@ -196,8 +196,8 @@ a.nav-link {
         margin-top: 25px;
         text-align: center;
         border-radius: 15px;
-        color: var(--whiteColor);
-        background-color: var(--primaryColor);
+        color: var(--primaryColor);
+        background-color: var(--secondaryColor);
         padding: {
             top: 60px;
             left: 40px;
@@ -207,37 +207,7 @@ a.nav-link {
         h4 {
             color: var(--whiteColor);
             margin-bottom: 25px;
-            font-size: 22px;
-        }
-        ul {
-            li {
-                margin-bottom: 15px;
-
-                a {
-                    display: block;
-                    font-size: 20px;
-                    position: relative;
-                    border-radius: 15px;
-                    color: var(--whiteColor);
-                    background-color: #343434;
-                    padding: 30px 30px 30px 55px;
-
-                    i {
-                        font-size: 30px;
-                        margin-left: -40px;
-                        position: absolute;
-                        color: var(--primaryColor);
-                        transition: var(--transition);
-                    }
-                    &:hover {
-                        background-color: var(--whiteColor);
-                        color: var(--blackColor);
-                    }
-                }
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
+            font-size: 24px;
         }
     }
 }
@@ -438,20 +408,6 @@ a.nav-link {
                 margin-bottom: 25px;
                 font-size: 19px;
             }
-            ul {
-                li {
-                    a {
-                        font-size: 16px;
-                        border-radius: 10px;
-                        padding: 22px 22px 22px 45px;
-
-                        i {
-                            font-size: 25px;
-                            margin-left: -35px;
-                        }
-                    }
-                }
-            }
         }
     }
 
@@ -537,13 +493,6 @@ a.nav-link {
             };
             h4 {
                 font-size: 21px;
-            }
-            ul {
-                li {
-                    a {
-                        padding: 25px 25px 25px 50px;
-                    }
-                }
             }
         }
     }

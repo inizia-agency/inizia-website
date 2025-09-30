@@ -1,15 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
-interface ContactInfo {
-    phone: string;
-    email: string;
-}
 interface Details {
     category: string;
     status: string;
     website?: string;
     date?: string;
-    contact: ContactInfo;
 }
 interface IconSection {
     icon: string;
@@ -55,7 +50,7 @@ export class PortfolioDetailsPageComponent implements OnInit {
                         category: 'Validation & Build',
                         status: 'Prototype successfully delivered — moving to v1',
                         website: 'https://archerswitch.com.au/',
-                        contact: { phone: '+61450812952', email: 'hello@inizia.agency' }
+
                     },
                     iconSections: [
                         { icon: 'flaticon-bars', title: 'Challenge', text: 'Highly complex compliance processes in renewable energy (solar farms). All handled via paper forms. Needed digitalisation but complexity made it hard to know where to begin.' },
@@ -76,7 +71,7 @@ export class PortfolioDetailsPageComponent implements OnInit {
                         category: 'Validation & Build',
                         status: 'Delivered successfully',
                         website: 'https://revolvr.io/',
-                        contact: { phone: '+61450812952', email: 'hello@inizia.agency' }
+
                     },
                     iconSections: [
                         { icon: 'flaticon-bars', title: 'Challenge', text: 'Retailers and brands lacked a clear way to manage in real time sales of consigned stock. Client came with a broad idea, too large to tackle in one go.' },
@@ -97,7 +92,7 @@ export class PortfolioDetailsPageComponent implements OnInit {
                         category: 'Validation, Build & Sustain',
                         status: 'About to successfully launch v1',
                         website: 'https://tellie.me/',
-                        contact: { phone: '+61450812952', email: 'hello@inizia.agency' }
+
                     },
                     iconSections: [
                         { icon: 'flaticon-bars', title: 'Challenge', text: 'Elders face loneliness and often struggle with technology. The challenge was to determine how to build something that would be easy to use for elders.' },
@@ -118,7 +113,7 @@ export class PortfolioDetailsPageComponent implements OnInit {
                         category: 'Project Rescue',
                         status: 'Successfully Delivered',
                         website: 'https://www.benchon.com/',
-                        contact: { phone: '+61450812952', email: 'hello@inizia.agency' }
+
                     },
                     iconSections: [
                         { icon: 'flaticon-bars', title: 'Challenge', text: 'Client had issues with their previous developer, looming deadlines, and a rough product needing to be ready for App Store and Play Store submission.' },
@@ -139,7 +134,7 @@ export class PortfolioDetailsPageComponent implements OnInit {
                         category: 'Validation & Build',
                         status: 'Validation and MVP done, building v1',
                         website: 'https://zynk.to/',
-                        contact: { phone: '+61450812952', email: 'hello@inizia.agency' }
+
                     },
                     iconSections: [
                         { icon: 'flaticon-bars', title: 'Challenge', text: 'SMEs struggle with fragmented digital presence across multiple platforms, leading to customer confusion.' },
@@ -160,7 +155,7 @@ export class PortfolioDetailsPageComponent implements OnInit {
                         category: 'Build',
                         status: 'Successfully Delivered (year 2022)',
                         website: 'https://artesianhospitality.com/',
-                        contact: { phone: '+61450812952', email: 'hello@inizia.agency' }
+
                     },
                     iconSections: [
                         { icon: 'flaticon-bars', title: 'Challenge', text: 'Multiple stakeholders and a gap between design and technical implementation.' },
@@ -180,7 +175,7 @@ export class PortfolioDetailsPageComponent implements OnInit {
                         category: 'Build',
                         status: 'Successfully Delivered (year 2022)',
                         website: 'https://paintprojex.com/au/',
-                        contact: { phone: '+61450812952', email: 'hello@inizia.agency' }
+
                     },
                     iconSections: [
                         { icon: 'flaticon-bars', title: 'Challenge', text: 'Multiple stakeholders and a gap between design and technical implementation.' },
