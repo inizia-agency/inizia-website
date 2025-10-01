@@ -22,7 +22,7 @@ export class ContactPageComponent {
     constructor(private canonical: CanonicalService) {}
 
     ngOnInit(): void {
-        this.title.setTitle('Contact Inizia | Book a meeting today');
+        this.title.setTitle('Inizia | Contact');
         this.meta.updateTag({
             name: 'description',
             content: 'Get in touch with Inizia to discuss your product idea. Book a meeting to explore for we can help turn your idea into a scalable tech product.'
