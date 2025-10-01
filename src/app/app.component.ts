@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
+import {isBrowser} from "./utils/platform";
 
 declare global {
     interface Window {
@@ -19,7 +20,7 @@ export class AppComponent implements OnInit {
     darkMode = false;
 
     constructor(private router: Router) {
-        this.darkMode = JSON.parse(localStorage.getItem('darkMode') || 'false');
+        // this.darkMode = JSON.parse(localStorage.getItem('darkMode') || 'false');
     }
 
     ngOnInit() {
@@ -30,8 +31,14 @@ export class AppComponent implements OnInit {
             });
     }
 
-    toggleDarkMode() {
-        this.darkMode = !this.darkMode;
-        localStorage.setItem('darkMode', JSON.stringify(this.darkMode));
+    onCta() {
+        if (isBrowser()) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     }
+
+    // toggleDarkMode() {
+    //     this.darkMode = !this.darkMode;
+    //     localStorage.setItem('darkMode', JSON.stringify(this.darkMode));
+    // }
 }

@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
+import {Meta, Title} from "@angular/platform-browser";
+import {CanonicalService} from "../../../services/canonical.service";
 
 @Component({
   selector: 'app-contact-page',
@@ -14,7 +16,29 @@ export class ContactPageComponent {
     successMessage?: string = '';
     errorMessage?: string = '';
 
-    constructor() {}
+    private title = inject(Title);
+    private meta = inject(Meta);
+
+    constructor(private canonical: CanonicalService) {}
+
+    ngOnInit(): void {
+        this.title.setTitle('Contact Inizia | Book a meeting today');
+        this.meta.updateTag({
+            name: 'description',
+            content: 'Get in touch with Inizia to discuss your product idea. Book a meeting to explore for we can help turn your idea into a scalable tech product.'
+        });
+        this.canonical.set('https://inizia.agency/contact');
+
+        this.meta.updateTag({ property: 'og:title', content: 'Contact Inizia | Book a meeting today' });
+        this.meta.updateTag({ property: 'og:description', content: 'Schedule a call with Inizia to start building your tech product.' });
+        this.meta.updateTag({ property: 'og:url', content: 'https://inizia.agency/contact' });
+        this.meta.updateTag({ property: 'og:image', content: 'https://inizia.agency/assets/og/inizia-og.png' });
+
+        this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
+        this.meta.updateTag({ name: 'twitter:title', content: 'Contact Inizia | Book a meeting today' });
+        this.meta.updateTag({ name: 'twitter:description', content: 'Let’s talk about how we can help you validate, design, and build.' });
+        this.meta.updateTag({ name: 'twitter:image', content: 'https://inizia.agency/assets/og/inizia-og.png' });
+    }
 
     public sendMessage(e: Event) {
         e.preventDefault();

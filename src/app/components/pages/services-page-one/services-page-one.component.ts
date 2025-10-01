@@ -1,6 +1,8 @@
 // services-page-one.component.ts
-import { Component, AfterViewInit, OnDestroy } from '@angular/core';
+import {Component, AfterViewInit, OnDestroy, inject} from '@angular/core';
 import Swiper, { Navigation, Pagination, A11y } from 'swiper';
+import {Meta, Title} from "@angular/platform-browser";
+import {CanonicalService} from "../../../services/canonical.service";
 
 Swiper.use([Navigation, Pagination, A11y]);
 
@@ -13,6 +15,30 @@ export class ServicesPageOneComponent implements AfterViewInit, OnDestroy {
   private swiper?: Swiper;
   private mq = window.matchMedia('(min-width: 992px)'); // desktop breakpoint
   private onMqChange = (e: MediaQueryListEvent) => this.toggleSwiper(e.matches);
+  private title = inject(Title);
+  private meta = inject(Meta);
+
+  constructor(private canonical: CanonicalService) {}
+
+  ngOnInit(): void {
+    this.title.setTitle('Inizia | Our services');
+    this.meta.updateTag({
+      name: 'description',
+      content: 'Our services help you launch and grow tech products that customers love.'
+    });
+    this.canonical.set('https://inizia.agency/services');
+
+    this.meta.updateTag({ property: 'og:title', content: 'Our services | Inizia' });
+    this.meta.updateTag({ property: 'og:description', content: 'Validation, design, development, and support for scalable apps.' });
+    this.meta.updateTag({ property: 'og:url', content: 'https://inizia.agency/services' });
+    this.meta.updateTag({ property: 'og:image', content: 'https://inizia.agency/assets/og/inizia-og.png' });
+
+    this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
+    this.meta.updateTag({ name: 'twitter:title', content: 'Our services | Inizia' });
+    this.meta.updateTag({ name: 'twitter:description', content: 'Helping founders validate, design, and build tech products.' });
+    this.meta.updateTag({ name: 'twitter:image', content: 'https://inizia.agency/assets/og/inizia-og.png' });
+  }
+
 
   ngAfterViewInit(): void {
     // initial mode
