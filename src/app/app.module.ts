@@ -6,7 +6,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HttpClientModule } from '@angular/common/http';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { TimepickerModule } from 'ngx-bootstrap/timepicker';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -121,7 +121,9 @@ import {GcalButtonComponent} from "./components/common/gcalendar-button/gcal-but
         ReactiveFormsModule,
         BsDropdownModule.forRoot(),
     ],
-    providers: [],
+    providers: [
+    provideClientHydration()
+  ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

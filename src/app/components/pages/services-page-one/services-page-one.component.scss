@@ -1,5 +1,8 @@
 @import "../../common/services/services.component.scss";
 
+/* ------------------------------
+   YOUR ORIGINAL STYLES (unchanged)
+   ------------------------------ */
 .divider {
   height: 1px;
   background-color: #000000;
@@ -38,7 +41,6 @@
   text-align: justify;
 }
 
-
 .tier-card {
   background: #fff;
   border: 1px solid #e1e1e1;
@@ -49,4 +51,198 @@
   &:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   }
+}
+
+/* --------------------------------------
+   SERVICES SECTION ENHANCEMENTS (scoped)
+   -------------------------------------- */
+.services-area {
+  position: relative;
+
+  /* keep card content left-aligned */
+  .tier-card {
+    text-align: left;
+    padding: 24px 20px;
+  }
+
+  /* allow pop-out slide to overflow neatly */
+  .services-carousel {
+    position: relative;
+    overflow: visible;
+    padding-bottom: 8px;
+
+    .swiper-wrapper { overflow: visible; }
+  }
+
+  /* ---------- Active/inactive card colors (via TS controllers) ---------- */
+  .tier-card.inactive-card {
+    background: #f3f3f3; /* grey for non-selected */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .tier-card.active-card {
+    background: #fff; /* white for selected */
+    transform: scale(1.06);
+    box-shadow: 0 16px 36px rgba(0,0,0,0.14);
+    border-color: rgba(0,0,0,0.08);
+    z-index: 2;
+  }
+
+  /* ---------- Pop-out emphasis (also works without TS classes) ---------- */
+  .swiper-slide { transition: transform 0.25s ease, filter 0.25s ease; }
+  .swiper-slide-active .tier-card {
+    transform: scale(1.06);
+    box-shadow: 0 16px 36px rgba(0,0,0,0.14);
+    border-color: rgba(0,0,0,0.08);
+    z-index: 2;
+  }
+  .swiper-slide-prev .tier-card,
+  .swiper-slide-next .tier-card {
+    transform: scale(0.98);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+  }
+
+  /* ---------- Controls & pagination ----------
+     Supports BOTH placements:
+     A) controls INSIDE .services-carousel
+     B) controls as a sibling directly under .services-area
+  */
+  .services-carousel .services-controls,
+  > .services-controls {
+    position: absolute;
+    /* if inside carousel → anchors to carousel; if sibling → still sits over carousel area */
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none;     /* let slide clicks pass through */
+    padding-inline: 8px;
+    z-index: 3;
+  }
+
+  .services-carousel .nav-btn,
+  > .services-controls .nav-btn {
+    pointer-events: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid #e3e3e3;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+    cursor: pointer;
+
+    i { font-size: 18px; line-height: 1; }
+    &:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); background: #fafafa; }
+    &:active { transform: translateY(0); }
+  }
+  .services-carousel .nav-btn:disabled,
+  > .services-controls .nav-btn:disabled,
+  .services-carousel .swiper-button-disabled {
+    opacity: 0.4; cursor: not-allowed;
+  }
+
+  .services-carousel .services-pagination,
+  > .services-controls .services-pagination {
+    pointer-events: none;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+    flex: 1;
+  }
+  .services-carousel .swiper-pagination-bullet,
+  > .services-controls .swiper-pagination-bullet {
+    width: 8px; height: 8px; opacity: 0.5; background: #999; margin: 0 6px !important;
+  }
+  .services-carousel .swiper-pagination-bullet-active,
+  > .services-controls .swiper-pagination-bullet-active {
+    opacity: 1; background: var(--primaryColor);
+  }
+
+  /* ---------- Responsive (services only) ---------- */
+  @media (max-width: 991.98px) {
+    .services-carousel .nav-btn,
+    > .services-controls .nav-btn { width: 44px; height: 44px; }
+    .tier-card { padding: 22px 18px; }
+  }
+
+  @media (max-width: 767.98px) {
+    .services-carousel .nav-btn,
+    > .services-controls .nav-btn { width: 42px; height: 42px; }
+
+    /* drop pagination below on small screens */
+    .services-carousel .services-pagination,
+    > .services-controls .services-pagination {
+      position: absolute;
+      bottom: -22px;
+      left: 0;
+      right: 0;
+      min-height: 0;
+    }
+
+    .tier-card { padding: 20px 16px; }
+  }
+}
+
+/* --------------------------------------
+   Optional: icon + title inline header
+   (only if your HTML uses .tier-header)
+   -------------------------------------- */
+/* Native scroll mode for tablet/mobile (activated by TS adding .no-swiper) */
+.services-area .services-carousel.no-swiper {
+  overflow: hidden; /* wrapper will scroll instead */
+
+  .services-controls,
+  .services-pagination { display: none !important; } /* hide arrows/dots */
+
+  .swiper-wrapper {
+    display: flex !important;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: visible;
+    gap: 12px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 4px 4px 12px;
+  }
+  .swiper-slide {
+    flex: 0 0 90%;          /* show one card at a time (next peeks a bit) */
+    scroll-snap-align: start;
+  }
+}
+
+/* Hide scrollbar when in native scroll mode */
+.services-area .services-carousel.no-swiper .swiper-wrapper {
+  scrollbar-width: none;   /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.services-area .services-carousel.no-swiper .swiper-wrapper::-webkit-scrollbar {
+  display: none;           /* Chrome/Safari */
+}
+
+/* optional tweak: a bit wider on tablets */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .services-area .services-carousel.no-swiper .swiper-slide { flex-basis: 70%; }
+}
+
+.services-area .tier-card .tier-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.services-area .tier-card .tier-header .tier-icon {
+  font-size: 32px;
+  color: var(--primaryColor);
+  flex-shrink: 0;
+  margin: 0;
+}
+.services-area .tier-card .tier-header h4 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
 }

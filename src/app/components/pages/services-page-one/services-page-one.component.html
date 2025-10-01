@@ -29,158 +29,138 @@
             </div>
         </div>
 
-        <!-- Carousel Controls -->
-        <div class="services-controls">
-            <button class="nav-btn services-prev" aria-label="Previous services"><i class="flaticon-left"></i></button>
-            <button class="nav-btn services-next" aria-label="Next services"><i class="flaticon-right"></i></button>
-        </div>
-
-        <!-- Services Carousel -->
+        <!-- Carousel -->
         <div class="services-carousel swiper">
+            <div class="services-controls" aria-label="Services navigation">
+                <button class="nav-btn services-prev" aria-label="Previous services">
+                    <i class="flaticon-left-arrow"></i>
+                </button>
+<!--                <div class="services-pagination swiper-pagination" aria-label="Services pagination"></div>-->
+                <button class="nav-btn services-next" aria-label="Next services">
+                    <i class="flaticon-right-arrow"></i>
+                </button>
+            </div>
             <div class="swiper-wrapper">
-
                 <!-- Validate -->
                 <div class="swiper-slide">
                     <div class="tier-card single-service-box mb-25">
-                        <div class="icon"><i class="flaticon-business-idea"></i></div>
-                        <h4>Validate</h4>
-                        <p class="fst-italic small text-muted">Three months to test your idea with real users — before you invest in code.</p>
-                        <p>You’ve got the industry insight; we run structured experiments to confirm demand, shape the solution, and give you evidence to move forward confidently.</p>
-                        <span class="bold-uppercase">Who it’s for</span>
+                        <h4>🔎 Validate</h4>
+                        <p class="fst-italic small text-muted pb-3">Three months to test your idea with real users — before you invest in code.</p>
+                        <span class="bold-uppercase pt-3">Who it’s for</span>
                         <ul class="checked">
                             <li>Business owners stepping into tech who want clarity before building</li>
                             <li>Leaders needing proof for partners, boards or early backers</li>
                         </ul>
                         <span class="bold-uppercase-1">Benefits</span>
-                        <ul>
+                        <ul class="benefits pb-3">
                             <li>Clear go/no-go backed by customer data — reduce risk</li>
                             <li>Prioritised feature set so you only build what matters</li>
                             <li>Clickable prototype to align teams and support pitches</li>
                             <li>Early audience capture via landing page, surveys and tests</li>
                         </ul>
-                        <button class="second-default-btn mt-3" (click)="openBooking('Validate')">
-                            BOOK A FREE 30’ DISCOVERY MEETING <i class="flaticon-right-up"></i>
-                        </button>
+                        <app-gcal-button label="Access discovery session" brandClass="default-btn"></app-gcal-button>
                     </div>
                 </div>
 
                 <!-- Build -->
                 <div class="swiper-slide">
                     <div class="tier-card single-service-box mb-25">
-                        <div class="icon"><i class="flaticon-coding"></i></div>
-                        <h4>Build</h4>
-                        <p class="fst-italic small text-muted">Your product team from MVP to traction. Launch, learn, iterate.</p>
-                        <p>We design, code and ship your MVP in ~90 days, then adapt based on real usage. One flexible engagement that moves from MVP into iteration and monetisation without you juggling vendors.</p>
-                        <span class="bold-uppercase">Who it’s for</span>
+                        <h4>💻 Build</h4>
+                        <p class="fst-italic small text-muted pb-3">Your product team from MVP to traction. Launch, learn, iterate.</p>
+                        <span class="bold-uppercase pt-3">Who it’s for</span>
                         <ul class="checked">
                             <li>Non-technical founders who want an accountable, senior product team</li>
                             <li>Businesses ready to launch a first version and improve every month</li>
                         </ul>
-                        <span class="bold-uppercase-1">Benefits</span>
-                        <ul>
+                        <span class="bold-uppercase-1 mt-3">Benefits</span>
+                        <ul class="benefits pb-3">
                             <li>Fast path to a working product in customers’ hands</li>
                             <li>Measurable monthly progress and transparent releases</li>
                             <li>Lean scope control so spend tracks to outcomes</li>
                             <li>Technical foundation built to scale or hand over cleanly</li>
                         </ul>
-                        <button class="second-default-btn mt-3" (click)="openBooking('Build')">
-                            BOOK A FREE 30’ DISCOVERY MEETING <i class="flaticon-right-up"></i>
-                        </button>
+                        <app-gcal-button label="Access discovery session" brandClass="default-btn"></app-gcal-button>
                     </div>
                 </div>
 
                 <!-- Sustain -->
                 <div class="swiper-slide">
                     <div class="tier-card single-service-box mb-25">
-                        <div class="icon"><i class="flaticon-web-optimization"></i></div>
-                        <h4>Sustain</h4>
-                        <p class="fst-italic small text-muted">Keep momentum with small features, UX polish and steady improvements.</p>
-                        <p>Your product is live and stable. Sustain keeps it fresh and useful with light adjustments, UX enhancements and fixes that improve retention — without the cost of a full build cycle.</p>
-                        <span class="bold-uppercase">Who it’s for</span>
+                        <h4>🌱 Sustain</h4>
+                        <p class="fst-italic small text-muted pb-3">Keep momentum with small features, UX polish and steady improvements.</p>
+                         <span class="bold-uppercase pt-3">Who it’s for</span>
                         <ul class="checked">
                             <li>Teams post-launch who want continuous improvement at a lighter pace</li>
                             <li>Founders balancing go-to-market activity with product care</li>
                         </ul>
                         <span class="bold-uppercase-1">Benefits</span>
-                        <ul>
+                        <ul class="benefits pb-3">
                             <li>Happier users via regular UX refinements</li>
                             <li>Reduced tech debt with ongoing fixes and updates</li>
                             <li>Clear monthly impact without heavy overhead</li>
                             <li>Easy switch back to Build when a bigger push is needed</li>
                         </ul>
-                        <button class="second-default-btn mt-3" (click)="openBooking('Sustain')">
-                            BOOK A FREE 30’ DISCOVERY MEETING <i class="flaticon-right-up"></i>
-                        </button>
+                        <app-gcal-button label="Access discovery session" brandClass="default-btn"></app-gcal-button>
                     </div>
                 </div>
 
                 <!-- Maintain -->
                 <div class="swiper-slide">
                     <div class="tier-card single-service-box mb-25">
-                        <div class="icon"><i class="flaticon-front-end"></i></div>
-                        <h4>Maintain</h4>
-                        <p class="fst-italic small text-muted">Peace of mind. Monitoring, security and updates handled for you.</p>
-                        <p>We keep your app healthy behind the scenes so you can focus on the business. Monitoring, security patches, dependency updates and light content changes are covered.</p>
-                        <span class="bold-uppercase">Who it’s for</span>
+                        <h4>🔋 Maintain</h4>
+                        <p class="fst-italic small text-muted pb-3">Peace of mind. Monitoring, security and updates handled for you.</p>
+                        <span class="bold-uppercase pt-3">Who it’s for</span>
                         <ul class="checked">
                             <li>Products no longer in full build mode that still need reliable care</li>
                             <li>Owners who want zero-fuss tech upkeep</li>
                         </ul>
                         <span class="bold-uppercase-1">Benefits</span>
-                        <ul>
+                        <ul class="benefits pb-3">
                             <li>Higher uptime and fewer emergencies</li>
                             <li>Security and package updates done on schedule</li>
                             <li>Clear monthly health reports and release logs</li>
                             <li>Lower long-term risk through preventative maintenance</li>
                         </ul>
-                        <button class="second-default-btn mt-3" (click)="openBooking('Maintain')">
-                            BOOK A FREE 30’ DISCOVERY MEETING <i class="flaticon-right-up"></i>
-                        </button>
+                        <app-gcal-button label="Access discovery session" brandClass="default-btn"></app-gcal-button>
                     </div>
                 </div>
 
                 <!-- Project Rescue -->
                 <div class="swiper-slide">
                     <div class="tier-card single-service-box mb-25">
-                        <div class="icon"><i class="flaticon-coding-1"></i></div>
-                        <h4>Project Rescue</h4>
-                        <p class="fst-italic small text-muted">Short, high-intensity recovery for at-risk products.</p>
-                        <p>When delivery stalls or quality slips, we step in fast. We audit, triage and stabilise the codebase, then ship against clear recovery milestones so you can regain control.</p>
-                        <span class="bold-uppercase">Who it’s for</span>
+                        <h4>🛟 Project Rescue</h4>
+                        <p class="fst-italic small text-muted pb-3">Short, high-intensity recovery for at-risk products.</p>
+                       <span class="bold-uppercase pt-3">Who it’s for</span>
                         <ul class="checked">
                             <li>Businesses inheriting broken builds or overdue projects</li>
                             <li>Leaders who need a trusted team to steady the ship quickly</li>
                         </ul>
-                        <span class="bold-uppercase-1">Benefits</span>
-                        <ul>
+                        <span class="bold-uppercase-1 mt-3">Benefits</span>
+                        <ul class="benefits pb-3">
                             <li>Clarity in two weeks with a practical recovery plan</li>
                             <li>Rapid risk reduction and restored stakeholder confidence</li>
                             <li>Codebase stabilised and ready for ongoing development</li>
                             <li>Smoother handover into Build, Sustain or your internal team</li>
                         </ul>
-                        <button class="second-default-btn mt-3" (click)="openBooking('Project Rescue')">
-                            BOOK A FREE 30’ DISCOVERY MEETING <i class="flaticon-right-up"></i>
-                        </button>
+                        <app-gcal-button label="Access discovery session" brandClass="default-btn"></app-gcal-button>
                     </div>
                 </div>
 
             </div>
-
-            <!-- Pagination (dots) -->
-            <div class="services-pagination swiper-pagination"></div>
-        </div>
-
-        <!-- Bottom CTA -->
-        <div class="text-center mb-lg-5">
-            <a href="/assets/inizia-service-offer.pdf" class="second-default-btn" download>
-                DOWNLOAD THE FULL SERVICE GUIDE <i class="flaticon-right-up"></i>
-            </a>
-            <p class="mt-2 small text-muted text-italic">
-                A detailed breakdown of inclusions, pricing and how to choose the right path.
-            </p>
         </div>
     </div>
 
-    <app-tech-use></app-tech-use>
-    <app-work-process></app-work-process>
+    <div class="text-center mt-lg-5">
+        <a href="/assets/inizia-service-offer.pdf" class="third-default-btn" download>
+            DOWNLOAD THE FULL SERVICE GUIDE <i class="flaticon-right-up"></i>
+        </a>
+        <p class="mt-2 small text-muted text-italic">
+            A detailed breakdown of inclusions, pricing and how to choose the right path.
+        </p>
+    </div>
 </div>
+
+
+<app-work-process></app-work-process>
+<app-tech-use></app-tech-use>
+<app-faq></app-faq>
