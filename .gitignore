@@ -13,11 +13,6 @@ build/
 .angular/
 
 # Local environment files
-.env
-.env.local
-.env.development
-.env.test
-.env.production
 
 # System files
 .DS_Store
@@ -38,3 +33,6 @@ yarn-error.log*
 
 # Optional: coverage reports
 coverage/
+config.bat
+temp_auto_push.bat
+temp_interactive_push.bat
