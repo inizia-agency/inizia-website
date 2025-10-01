@@ -89,7 +89,7 @@ export class PortfolioDetailsPageComponent implements OnInit {
                     description:
                         'Elders face loneliness and tech friction. We shaped a clear concept: an empathetic AI companion with very simple UX, targeted to elder users.',
                     details: {
-                        category: 'Validation, Build & Sustain',
+                        category: 'Validation, Build & Grow',
                         status: 'About to successfully launch v1',
                         website: 'https://tellie.me/',
 
